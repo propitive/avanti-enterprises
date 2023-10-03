@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px 0;
+  background: #00294b;
+  height: 75px;
+  align-items: center;
+}
+
+.header__image {
+  cursor: pointer;
+  height: 40px;
+  width: 250px;
+}
+
+.header__navbar {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 30px;
+  list-style-type: none;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.header__list-item {
+  cursor: pointer;
+  color: #fefefa;
+  transition: color 0.15s ease-in;
+}
+
+.header__list-item:hover {
+  /* color: #4c92d8; */
+  color: #777f8c;
+}
+
+.header__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.header__icon {
+  cursor: pointer;
+}
