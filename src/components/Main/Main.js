@@ -1,7 +1,11 @@
-import Header from "../App/Header/Header";
+import Header from "../Header/Header";
 
 function Main() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default Main;
