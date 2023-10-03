@@ -1,4 +1,4 @@
-import avantiLogo from "../images/avantiLogo.jpg";
+import avantiLogo from "../../images/avantiLogo.jpg";
 
 function Header() {
   return (
