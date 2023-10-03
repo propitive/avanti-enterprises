@@ -36,7 +36,7 @@
 
 .header__list-item:hover {
   /* color: #4c92d8; */
-  color: #777f8c;
+  color: #c50b30;
 }
 
 .header__icons {
@@ -48,4 +48,5 @@
 
 .header__icon {
   cursor: pointer;
+  height: 26px;
 }
