@@ -7,11 +7,6 @@ import "swiper/scss/effect-fade";
 import styles from "./ImageSlider.module.scss";
 import { imageSliderPhotos } from "../../utils/constants";
 
-import brownCabinets from "../../images/imageSlider/brownCabinets.jpg";
-import modernBrownCabinets from "../../images/imageSlider/modernBrownCabinets.jpg";
-import whiteCabinets from "../../images/imageSlider/whiteCabinets.jpg";
-import oldWhiteCabinets from "../../images/imageSlider/oldWhiteCabinets.jpg";
-
 function ImageSlider() {
   const swiperNavPrevRef = useRef(null);
   const swiperNavNextRef = useRef(null);
