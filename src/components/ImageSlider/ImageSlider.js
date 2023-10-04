@@ -5,6 +5,7 @@ import { Navigation, EffectFade } from "swiper";
 import "swiper/scss/navigation";
 import "swiper/scss/effect-fade";
 import styles from "./ImageSlider.module.scss";
+import { imageSliderPhotos } from "../../utils/constants";
 
 import brownCabinets from "../../images/imageSlider/brownCabinets.jpg";
 import modernBrownCabinets from "../../images/imageSlider/modernBrownCabinets.jpg";
@@ -36,18 +37,13 @@ function ImageSlider() {
           swiper.navigation.update();
         }}
       >
-        <SwiperSlide className={styles.swiperslide}>
-          <img src={brownCabinets} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperslide}>
-          <img src={modernBrownCabinets} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperslide}>
-          <img src={whiteCabinets} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className={styles.swiperslide}>
-          <img src={oldWhiteCabinets} alt="" />
-        </SwiperSlide>
+        {imageSliderPhotos.map((photo) => {
+          return (
+            <SwiperSlide className={styles.swiperslide} key={photo.id}>
+              <img src={photo.src} alt={photo.alt} />
+            </SwiperSlide>
+          );
+        })}
         <div className={`${styles.swiperNavPrev}`} ref={swiperNavPrevRef}></div>
         <div className={`${styles.swiperNavNext}`} ref={swiperNavNextRef}></div>
       </Swiper>
