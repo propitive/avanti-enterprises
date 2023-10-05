@@ -1,8 +1,8 @@
 //// IMAGE SLIDER PHOTOS ////
-import brownCabinets from "../images/imageSlider/brownCabinets.jpg";
-import modernBrownCabinets from "../images/imageSlider/modernBrownCabinets.jpg";
-import whiteCabinets from "../images/imageSlider/whiteCabinets.jpg";
-import oldWhiteCabinets from "../images/imageSlider/oldWhiteCabinets.jpg";
+import kitchenOne from "../images/imageSlider/kitchenOneJPG.jpg";
+import kitchenTwo from "../images/imageSlider/kitchenTwoJPG.jpg";
+import kitchenThree from "../images/imageSlider/kitchenThreePNG.png";
+import kitchenFour from "../images/imageSlider/kitchenFourJPG.jpg";
 
 //// SHOWCASE CARDS ////
 import bathroomCabinets from "../images/showcaseCards/bathroomCabinets.jpg";
@@ -10,10 +10,10 @@ import kitchenCabinets from "../images/showcaseCards/kitchenCabinets.jpg";
 import vinylPlanking from "../images/showcaseCards/vinylPlanking.jpg";
 
 export const imageSliderPhotos = [
-  { id: 1, src: brownCabinets, alt: "Brown cabinets" },
-  { id: 2, src: modernBrownCabinets, alt: "Modern Brown cabinets" },
-  { id: 3, src: whiteCabinets, alt: "White cabinets" },
-  { id: 4, src: oldWhiteCabinets, alt: "Old White cabinets" },
+  { id: 1, src: kitchenOne, alt: "Brown cabinets" },
+  { id: 2, src: kitchenTwo, alt: "Modern Brown cabinets" },
+  { id: 3, src: kitchenThree, alt: "White cabinets" },
+  { id: 4, src: kitchenFour, alt: "Old White cabinets" },
 ];
 
 export const showcaseCards = [
