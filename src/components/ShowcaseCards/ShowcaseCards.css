@@ -9,8 +9,10 @@
 }
 
 .showcase__card {
-  width: 700px;
-  height: 450px;
+  /* width: 500px;
+    height: 300px; */
+  width: 500px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -31,18 +33,20 @@
 }
 
 .showcase__card:hover .showcase__title {
-  opacity: 0.2;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
 .showcase__card:hover .showcase__paragraph {
-  opacity: 0.2;
+  opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
 
 .showcase__image {
-  width: 700px;
-  height: 450px;
+  /* width: 700px;
+  height: 450px; */
+  width: 500px;
+  height: 300px;
   position: absolute;
   z-index: -1;
   filter: brightness(50%);
