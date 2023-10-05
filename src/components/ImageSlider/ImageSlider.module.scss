@@ -35,10 +35,12 @@
     .swiperNavPrev {
       left: 0;
       background-image: url("../../images/icons/iconLeftArrow.png");
+      margin-left: 40px;
     }
     .swiperNavNext {
       right: 0;
       background-image: url("../../images/icons/iconRightArrow.png");
+      margin-right: 40px;
     }
   }
 }

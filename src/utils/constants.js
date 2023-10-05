@@ -10,10 +10,10 @@ import kitchenCabinets from "../images/showcaseCards/kitchenCabinets.jpg";
 import vinylPlanking from "../images/showcaseCards/vinylPlanking.jpg";
 
 export const imageSliderPhotos = [
-  { id: 1, src: kitchenOne, alt: "Brown cabinets" },
+  { id: 1, src: kitchenTwo, alt: "Brown cabinets" },
   { id: 2, src: kitchenTwo, alt: "Modern Brown cabinets" },
-  { id: 3, src: kitchenThree, alt: "White cabinets" },
-  { id: 4, src: kitchenFour, alt: "Old White cabinets" },
+  { id: 3, src: kitchenTwo, alt: "White cabinets" },
+  { id: 4, src: kitchenTwo, alt: "Old White cabinets" },
 ];
 
 export const showcaseCards = [
