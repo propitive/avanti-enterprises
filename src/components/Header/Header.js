@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
 import iconInstagram from "../../images/icons/instagram.svg";
 import iconFacebook from "../../images/icons/facebook.svg";
+
+import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
 function Header() {
   return (
@@ -13,16 +16,25 @@ function Header() {
         <img className="header__icon" src={iconFacebook} alt="Facebook logo" />
       </div>
       <ul className="header__navbar">
-        <li className="header__list-item">Kitchen Cabinets</li>
-        <li className="header__list-item">Bathroom Cabinets</li>
-        <li className="header__list-item">Vinyl Planking</li>
-        <li className="header__list-item">About Us</li>
+        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+          <li className="header__list-item">Kitchen Cabinets</li>
+        </Link>
+        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+          <li className="header__list-item">Bathroom Cabinets</li>
+        </Link>
+        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+          <li className="header__list-item">Vinyl Planking</li>
+        </Link>
+        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+          <li className="header__list-item">About</li>
+        </Link>
       </ul>
-      <button className="header__button">
-        <span className="header__button-shadow"></span>
-        <span className="header__button-edge"></span>
-        <span className="header__button-text">GET A QUOTE</span>
-      </button>
+      <Link
+        to="/contact-form"
+        style={{ textDecoration: "none", color: "#f5f0f0" }}
+      >
+        <BookOnlineButton />
+      </Link>
     </header>
   );
 }

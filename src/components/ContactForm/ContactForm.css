@@ -1,0 +1,89 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 150px;
+}
+
+.contact-form__header {
+  font-size: 70px;
+  margin: 0;
+}
+
+.contact-form__input-box {
+  position: relative;
+  align-self: center;
+  width: 450px;
+}
+
+.contact-form__input {
+  padding: 10px 0 10px 10px;
+  width: 376px;
+  margin-left: 2rem;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.form__input-box {
+  position: relative;
+  align-self: center;
+  width: 450px;
+  margin-top: 30px;
+}
+
+.form__input {
+  padding: 10px 0 10px 10px;
+  width: 376px;
+  margin-left: 2rem;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.form__input-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  margin-left: 2rem;
+  pointer-events: none;
+  font-size: 1em;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.form__input-box .form__input:valid ~ .form__input-span,
+.form__input-box .form__input:focus ~ .form__input-span {
+  color: black;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background: #fff;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  letter-spacing: 0.2em;
+}
+
+.form__input-box .form__input:valid,
+.form__input-box .form__input:focus {
+  border: 1px solid black;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__button {
+  margin-top: 40px;
+}
