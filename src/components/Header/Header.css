@@ -37,10 +37,11 @@
 .header__list-item {
   cursor: pointer;
   color: #fefefa;
-  transition: color 0.15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 .header__list-item:hover {
+  transform: translateY(-4px);
   /* color: #4c92d8; */
   /* color: #c50b30; */
 }

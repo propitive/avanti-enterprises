@@ -28,6 +28,12 @@ function Header() {
         <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
           <li className="header__list-item">About</li>
         </Link>
+        {/* <Link
+          to="/contact-form"
+          style={{ textDecoration: "none", color: "#f5f0f0" }}
+        >
+          <li className="header__list-item">Contact Us</li>
+        </Link> */}
       </ul>
       <Link
         to="/contact-form"

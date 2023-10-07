@@ -49,6 +49,25 @@
   transition: 0.5s;
 }
 
+.form__input:last-child {
+  padding: 10px 0 10px 10px;
+  width: 389px;
+  margin-left: 2rem;
+  border: 1px solid black;
+  background-color: transparent;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.form__input-invisible {
+  opacity: 0;
+  pointer-events: none;
+  cursor: none;
+}
+
 .form__input-span {
   position: absolute;
   top: 0;

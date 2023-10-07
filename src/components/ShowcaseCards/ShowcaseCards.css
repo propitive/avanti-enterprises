@@ -33,12 +33,12 @@
 }
 
 .showcase__card:hover .showcase__title {
-  opacity: 0;
+  opacity: 0.3;
   transition: opacity 0.5s ease-in-out;
 }
 
 .showcase__card:hover .showcase__paragraph {
-  opacity: 0;
+  opacity: 0.3;
   transition: opacity 0.5s ease-in-out;
 }
 
