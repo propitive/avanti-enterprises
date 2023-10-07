@@ -61,7 +61,7 @@ function ContactForm() {
               setNumberValue(e.value);
             }}
             mask="(999) 999-9999"
-            className="form__input"
+            className="form__input-number"
             name="number"
             type="text"
             required
