@@ -68,7 +68,10 @@ function ContactForm() {
           />
           <span className="form__input-span">Number</span>
         </div>
-        <BookOnlineButton className="contact-form__button" />
+        <BookOnlineButton
+          className="contact-form__button"
+          buttonText="GET A FREE QUOTE"
+        />
       </form>
       <Footer />
     </>

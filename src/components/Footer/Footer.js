@@ -1,3 +1,5 @@
+import EmailListForm from "../EmailListForm/EmailListForm";
+
 function Footer() {
   return (
     <footer className="footer">
@@ -13,7 +15,7 @@ function Footer() {
           <p className="footer__column-link">About</p>
         </div>
       </div>
-      <div className="footer__email-list"></div>
+      <EmailListForm />
     </footer>
   );
 }

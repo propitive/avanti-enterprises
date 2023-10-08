@@ -39,7 +39,7 @@ function Header() {
         to="/contact-form"
         style={{ textDecoration: "none", color: "#f5f0f0" }}
       >
-        <BookOnlineButton />
+        <BookOnlineButton buttonText="GET A FREE QUOTE" />
       </Link>
     </header>
   );

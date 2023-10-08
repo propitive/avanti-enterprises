@@ -1,0 +1,30 @@
+.email-list {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.email-list__header {
+  margin: 0;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.email-list__form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.email-list__input {
+  height: 34px;
+  width: 324px;
+  font-size: 15px;
+}
+
+.email-list__button {
+  height: 40px;
+  width: 115px;
+}
