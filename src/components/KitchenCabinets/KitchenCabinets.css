@@ -1,8 +1,31 @@
 .k-cabinets {
 }
 
-.k-cabinets__search {
+.k-cabinets__parallax {
+  height: 500px;
+  width: 100%;
 }
 
-.k-cabinets__products {
+.k-cabinets__first-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+}
+
+.k-cabinets__first-section__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+}
+
+.k-cabinets__first-section__header {
+}
+
+.k-cabinets__first-section__paragraph {
+}
+
+.k-cabinets__first-section__image {
+  max-width: 500px;
+  margin: auto;
 }

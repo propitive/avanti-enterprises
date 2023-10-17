@@ -1,30 +1,39 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import { Parallax } from "react-parallax";
+import kitchenParallax from "../../images/servicesParallax/kitchenCabinets.jpg";
+import kitchenImage from "../../images/showcaseCards/kitchenCabinets.jpg";
 
 function KitchenCabinets() {
   return (
     <>
       <Header />
       <div className="k-cabinets">
-        <div className="k-cabinets__search">
-          <h3 className="k-cabinets__trigger">Finish</h3>
-          <div className="k-cabinets__menu-finish">
-            <ul></ul>
+        <Parallax strength={400} bgImage={kitchenParallax}>
+          <div className="k-cabinets__parallax"></div>
+        </Parallax>
+        <div className="k-cabinets__first-section">
+          <div className="k-cabinets__first-section__description">
+            <h3 className="k-cabinets__first-section__header">
+              Lorem ipsum dolor sit amet
+            </h3>
+            <p className="k-cabinets__first-section__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
           </div>
-          <h3 className="k-cabinets__trigger">Design</h3>
-          <h3 className="k-cabinets__trigger">Width</h3>
-          <h3 className="k-cabinets__trigger">Height</h3>
-          <h3 className="k-cabinets__trigger">Color</h3>
+          <img
+            className="k-cabinets__first-section__image"
+            src={kitchenImage}
+            alt="Kitchen cabinets"
+          />
         </div>
-        <div className="k-cabinets__products"></div>
       </div>
       <Footer />
     </>
   );
-}
-
-function DropdownItem(props) {
-  return <li></li>;
 }
 
 export default KitchenCabinets;
