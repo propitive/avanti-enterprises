@@ -9,6 +9,11 @@ import bathroomCabinets from "../images/showcaseCards/bathroomCabinets.jpg";
 import kitchenCabinets from "../images/showcaseCards/kitchenCabinets.jpg";
 import vinylPlanking from "../images/showcaseCards/vinylPlanking.jpg";
 
+//// PRODUCTS KITCHEN CABINETS ////
+
+import charcoalBlack from "../images/products/kitchenCabinets/charcoalBlack.jpg"
+import charcoalBlack from "../images/products/kitchenCabinets"
+
 export const imageSliderPhotos = [
   { id: 1, src: kitchenTwo, alt: "Brown cabinets" },
   { id: 2, src: kitchenTwo, alt: "Modern Brown cabinets" },
@@ -42,3 +47,13 @@ export const showcaseCards = [
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
   },
 ];
+
+export const kitchenCabinetsShaker = [
+  {
+    id: 1,
+    src: ,
+    title: "Charcoal Black",
+  }
+]
+
+export const kitchenCabinetsTraditional = []
