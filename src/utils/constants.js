@@ -11,8 +11,28 @@ import vinylPlanking from "../images/showcaseCards/vinylPlanking.jpg";
 
 //// PRODUCTS KITCHEN CABINETS ////
 
-import charcoalBlack from "../images/products/kitchenCabinets/charcoalBlack.jpg"
-import charcoalBlack from "../images/products/kitchenCabinets"
+import charcoalBlack from "../images/products/kitchenCabinets/charcoalBlack.jpg";
+import chocolateGlazed from "../images/products/kitchenCabinets/chocolateGlazed.jpg";
+import cremeGlazed from "../images/products/kitchenCabinets/cremeGlazed.jpg";
+import dove from "../images/products/kitchenCabinets/dove.png";
+import espresso from "../images/products/kitchenCabinets/espresso.png";
+import greige from "../images/products/kitchenCabinets/greige.png";
+import hazel from "../images/products/kitchenCabinets/hazel.png";
+import hillcrestWhite from "../images/products/kitchenCabinets/hillcrestWhite.jpg";
+import lancasterWhite from "../images/products/kitchenCabinets/lancasterWhite.jpg";
+import mahogany from "../images/products/kitchenCabinets/mahogany.png";
+import mochaGlazed from "../images/products/kitchenCabinets/mochaGlazed.png";
+import naval from "../images/products/kitchenCabinets/naval.jpg";
+import pearlGlazed from "../images/products/kitchenCabinets/pearlGlazed.jpg";
+import pebble from "../images/products/kitchenCabinets/pebble.jpg";
+import pure from "../images/products/kitchenCabinets/pure.jpg";
+import sage from "../images/products/kitchenCabinets/sage.jpg";
+import shakerBlue from "../images/products/kitchenCabinets/shakerBlue.jpeg";
+import shakerCastleGrey from "../images/products/kitchenCabinets/shakerCastleGrey.jpg";
+import shakerEspresso from "../images/products/kitchenCabinets/shakerEspresso.jpg";
+import shakerGrey from "../images/products/kitchenCabinets/shakerGrey.jpg";
+import shakerHoney from "../images/products/kitchenCabinets/shakerHoney.jpg";
+import shakerWhite from "../images/products/kitchenCabinets/shakerWhite.jpg";
 
 export const imageSliderPhotos = [
   { id: 1, src: kitchenTwo, alt: "Brown cabinets" },
@@ -48,12 +68,87 @@ export const showcaseCards = [
   },
 ];
 
-export const kitchenCabinetsShaker = [
+export const kitchenCabinetsTraditional = [
   {
     id: 1,
-    src: ,
+    image: charcoalBlack,
     title: "Charcoal Black",
-  }
-]
+  },
+  {
+    id: 2,
+    image: chocolateGlazed,
+    title: "Chocolate Glazed",
+  },
+  {
+    id: 3,
+    image: cremeGlazed,
+    title: "Creme Glazed",
+  },
+  {
+    id: 4,
+    image: dove,
+    title: "Dove",
+  },
+  {
+    id: 5,
+    image: espresso,
+    title: "Espresso",
+  },
+  {
+    id: 6,
+    image: greige,
+    title: "Greige",
+  },
+  {
+    id: 7,
+    image: hazel,
+    title: "Hazel",
+  },
+  {
+    id: 8,
+    image: hillcrestWhite,
+    title: "Hillcrest White",
+  },
+  {
+    id: 9,
+    image: lancasterWhite,
+    title: "Lancaster White",
+  },
+  {
+    id: 10,
+    image: mahogany,
+    title: "Mahogany",
+  },
+  {
+    id: 11,
+    image: mochaGlazed,
+    title: "Mocha Glazed",
+  },
+  {
+    id: 12,
+    image: naval,
+    title: "Naval",
+  },
+  {
+    id: 13,
+    image: pearlGlazed,
+    title: "Pearl Glazed",
+  },
+  {
+    id: 14,
+    image: pebble,
+    title: "Pebble",
+  },
+  {
+    id: 15,
+    image: pure,
+    title: "Pure",
+  },
+  {
+    id: 16,
+    image: sage,
+    title: "Sage",
+  },
+];
 
-export const kitchenCabinetsTraditional = []
+export const kitchenCabinetsShaker = [];

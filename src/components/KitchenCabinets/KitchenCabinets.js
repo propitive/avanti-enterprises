@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
 import kitchenParallax from "../../images/servicesParallax/kitchenCabinets.jpg";
 import kitchenImage from "../../images/showcaseCards/kitchenCabinets.jpg";
+import { kitchenCabinetsTraditional } from "../../utils/constants";
 
 function KitchenCabinets() {
   return (
@@ -29,6 +30,29 @@ function KitchenCabinets() {
             src={kitchenImage}
             alt="Kitchen cabinets"
           />
+        </div>
+        <div className="k-cabinets__color-section">
+          <h3>Available Colors</h3>
+          <div className="k-cabinets__color-section__traditional-divider">
+            <p className="k-cabinets__color-section__traditional-header">
+              Traditional
+            </p>
+          </div>
+          <div className="k-cabinets__colors-section">
+            {kitchenCabinetsTraditional.map((cabinet) => {
+              return (
+                <div className="k-cabinets__colors-section__card">
+                  <img
+                    className="k-cabinets__colors-section__card-image"
+                    src={cabinet.image}
+                  />
+                  <h4 className="k-cabinets__colors-section__card-title">
+                    {cabinet.title}
+                  </h4>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <Footer />
