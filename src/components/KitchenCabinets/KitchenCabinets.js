@@ -32,26 +32,26 @@ function KitchenCabinets() {
           />
         </div>
         <div className="k-cabinets__color-section">
-          <h3>Available Colors</h3>
-          <div className="k-cabinets__color-section__traditional-divider">
-            <p className="k-cabinets__color-section__traditional-header">
-              Traditional
-            </p>
-          </div>
+          <h3 className="k-cabinets__color-section__header">
+            Available Colors
+          </h3>
+          <p className="k-cabinets__color-section__divider">Traditional</p>
           <div className="k-cabinets__colors-section">
-            {kitchenCabinetsTraditional.map((cabinet) => {
-              return (
-                <div className="k-cabinets__colors-section__card">
-                  <img
-                    className="k-cabinets__colors-section__card-image"
-                    src={cabinet.image}
-                  />
-                  <h4 className="k-cabinets__colors-section__card-title">
-                    {cabinet.title}
-                  </h4>
-                </div>
-              );
-            })}
+            <div className="k-cabinets__colors-section__cards">
+              {kitchenCabinetsTraditional.map((cabinet) => {
+                return (
+                  <div className="k-cabinets__colors-section__card">
+                    <img
+                      className="k-cabinets__colors-section__card-image"
+                      src={cabinet.image}
+                    />
+                    <h4 className="k-cabinets__colors-section__card-title">
+                      {cabinet.title}
+                    </h4>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
