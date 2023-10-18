@@ -151,4 +151,35 @@ export const kitchenCabinetsTraditional = [
   },
 ];
 
-export const kitchenCabinetsShaker = [];
+export const kitchenCabinetsShaker = [
+  {
+    id: 1,
+    image: shakerBlue,
+    title: "Blue",
+  },
+  {
+    id: 2,
+    image: shakerCastleGrey,
+    title: "Castle Grey",
+  },
+  {
+    id: 3,
+    image: shakerEspresso,
+    title: "Espresso",
+  },
+  {
+    id: 4,
+    image: shakerGrey,
+    title: "Grey",
+  },
+  {
+    id: 5,
+    image: shakerHoney,
+    title: "Honey",
+  },
+  {
+    id: 6,
+    image: shakerWhite,
+    title: "White",
+  },
+];

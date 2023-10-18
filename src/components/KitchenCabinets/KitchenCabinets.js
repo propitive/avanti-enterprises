@@ -3,7 +3,10 @@ import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
 import kitchenParallax from "../../images/servicesParallax/kitchenCabinets.jpg";
 import kitchenImage from "../../images/showcaseCards/kitchenCabinets.jpg";
-import { kitchenCabinetsTraditional } from "../../utils/constants";
+import {
+  kitchenCabinetsShaker,
+  kitchenCabinetsTraditional,
+} from "../../utils/constants";
 
 function KitchenCabinets() {
   return (
@@ -33,12 +36,31 @@ function KitchenCabinets() {
         </div>
         <div className="k-cabinets__color-section">
           <h3 className="k-cabinets__color-section__header">
-            Available Colors
+            Available Traditional
           </h3>
-          <p className="k-cabinets__color-section__divider">Traditional</p>
           <div className="k-cabinets__colors-section">
             <div className="k-cabinets__colors-section__cards">
               {kitchenCabinetsTraditional.map((cabinet) => {
+                return (
+                  <div className="k-cabinets__colors-section__card">
+                    <img
+                      className="k-cabinets__colors-section__card-image"
+                      src={cabinet.image}
+                    />
+                    <h4 className="k-cabinets__colors-section__card-title">
+                      {cabinet.title}
+                    </h4>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <h3 className="k-cabinets__color-section__header">
+            Available Shakers
+          </h3>
+          <div className="k-cabinets__colors-section">
+            <div className="k-cabinets__colors-section__cards">
+              {kitchenCabinetsShaker.map((cabinet) => {
                 return (
                   <div className="k-cabinets__colors-section__card">
                     <img
