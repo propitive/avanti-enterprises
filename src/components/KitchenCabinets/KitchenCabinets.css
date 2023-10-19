@@ -9,7 +9,9 @@
 .k-cabinets__first-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 500px;
+  height: 600px;
+  width: calc(100% - 80px);
+  margin: 0 auto 0;
 }
 
 .k-cabinets__first-section__description {
@@ -20,19 +22,26 @@
 }
 
 .k-cabinets__first-section__header {
+  font-size: 50px;
+  letter-spacing: -2px;
+  line-height: 60px;
+  margin: 0;
 }
 
 .k-cabinets__first-section__paragraph {
+  margin: 20px 0 0;
+  font-size: 20px;
 }
 
 .k-cabinets__first-section__image {
-  max-width: 500px;
-  margin: auto;
+  max-width: 800px;
+  height: 450px;
+  margin: auto auto auto 0;
 }
 
 .k-cabinets__color-section {
   background-color: #e5e5e5;
   padding-bottom: 80px;
-  width: calc(100% - 100px);
+  width: calc(100% - 80px);
   margin: 0 auto 80px;
 }
