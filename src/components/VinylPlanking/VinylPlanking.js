@@ -1,21 +1,18 @@
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
-import kitchenParallax from "../../images/servicesParallax/kitchenCabinets.jpg";
-import kitchenImage from "../../images/showcaseCards/kitchenCabinets.jpg";
-import {
-  kitchenCabinetsShaker,
-  kitchenCabinetsTraditional,
-} from "../../utils/constants";
+import vinylParallax from "../../images/servicesParallax/vinylPlanking.jpg";
+import vinylImage from "../../images/showcaseCards/vinylPlanking.jpg";
+import { vinylPlankingData } from "../../utils/constants";
 import ProductLayout from "../ProductLayout/ProductLayout";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
-function KitchenCabinets() {
+function VinylPlanking() {
   return (
     <>
       <Header />
       <div className="k-cabinets">
-        <Parallax strength={400} bgImage={kitchenParallax}>
+        <Parallax strength={400} bgImage={vinylParallax}>
           <div className="k-cabinets__parallax"></div>
         </Parallax>
         <div className="k-cabinets__first-section">
@@ -36,20 +33,14 @@ function KitchenCabinets() {
           </div>
           <img
             className="k-cabinets__first-section__image"
-            src={kitchenImage}
+            src={vinylImage}
             alt="Kitchen cabinets"
           />
         </div>
         <div className="k-cabinets__color-section">
           <ProductLayout
-            header="Available Traditional"
-            productArray={kitchenCabinetsTraditional}
-          />
-        </div>
-        <div className="k-cabinets__color-section">
-          <ProductLayout
-            header="Available Shakers"
-            productArray={kitchenCabinetsShaker}
+            header="Available Vinyl Planking"
+            productArray={vinylPlankingData}
           />
         </div>
       </div>
@@ -58,4 +49,4 @@ function KitchenCabinets() {
   );
 }
 
-export default KitchenCabinets;
+export default VinylPlanking;

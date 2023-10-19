@@ -29,17 +29,17 @@
 
 .showcase__card:hover .showcase__image {
   filter: brightness(80%);
-  transition: filter 0.5s ease-in-out;
+  transition: filter 0.4s ease-in-out;
 }
 
 .showcase__card:hover .showcase__title {
   opacity: 0.3;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .showcase__card:hover .showcase__paragraph {
   opacity: 0.3;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .showcase__image {
@@ -50,7 +50,7 @@
   position: absolute;
   z-index: -1;
   filter: brightness(50%);
-  transition: filter 1s ease-in-out;
+  transition: filter 0.4s ease-in-out;
   pointer-events: none;
 }
 
@@ -65,7 +65,7 @@
   font-size: 40px;
   text-align: center;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 .showcase__paragraph {
@@ -76,5 +76,5 @@
   max-width: calc(100% - 100px);
   font-weight: 600;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }

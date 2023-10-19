@@ -22,10 +22,16 @@ function Header() {
         >
           <li className="header__list-item">Kitchen Cabinets</li>
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+        <Link
+          to="/services/bathroom-cabinets"
+          style={{ textDecoration: "none", color: "#f5f0f0" }}
+        >
           <li className="header__list-item">Bathroom Cabinets</li>
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+        <Link
+          to="/services/vinyl-planking"
+          style={{ textDecoration: "none", color: "#f5f0f0" }}
+        >
           <li className="header__list-item">Vinyl Planking</li>
         </Link>
         <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>

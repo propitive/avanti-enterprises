@@ -29,8 +29,12 @@
 }
 
 .k-cabinets__first-section__paragraph {
-  margin: 20px 0 0;
+  margin: 20px 0 30px;
   font-size: 20px;
+}
+
+.k-cabinets__first-section__button {
+  width: 50%;
 }
 
 .k-cabinets__first-section__image {

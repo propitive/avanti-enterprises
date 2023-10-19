@@ -34,6 +34,23 @@ import shakerGrey from "../images/products/kitchenCabinets/shakerGrey.jpg";
 import shakerHoney from "../images/products/kitchenCabinets/shakerHoney.jpg";
 import shakerWhite from "../images/products/kitchenCabinets/shakerWhite.jpg";
 
+//// PRODUCTS VINYL PLANKING ////
+
+import atlantis16121 from "../images/products/vinylPlanking/vertAtlantis1612-1.PNG";
+import atlantis16122 from "../images/products/vinylPlanking/vertAtlantis1612-2.PNG";
+import atlantis16123 from "../images/products/vinylPlanking/vertAtlantis1612-3.PNG";
+import atlantis16124 from "../images/products/vinylPlanking/vertAtlantis1612-4.PNG";
+import blueLagoon16141 from "../images/products/vinylPlanking/vertBlueLagoon1614-1.PNG";
+import blueLagoon16142 from "../images/products/vinylPlanking/vertBlueLagoon1614-2.PNG";
+import blueLagoon16143 from "../images/products/vinylPlanking/vertBlueLagoon1614-3.PNG";
+import blueLagoon16144 from "../images/products/vinylPlanking/vertBlueLagoon1614-4.PNG";
+import casaCoral16161 from "../images/products/vinylPlanking/vertCasaCoral1616-1.PNG";
+import casaCoral16162 from "../images/products/vinylPlanking/vertCasaCoral1616-2.PNG";
+import casaCoral16163 from "../images/products/vinylPlanking/vertCasaCoral1616-3.PNG";
+import casaCoral16164 from "../images/products/vinylPlanking/vertCasaCoral1616-4.PNG";
+import casaCoral16165 from "../images/products/vinylPlanking/vertCasaCoral1616-5.PNG";
+import casaCoral16166 from "../images/products/vinylPlanking/vertCasaCoral1616-6.PNG";
+
 export const imageSliderPhotos = [
   { id: 1, src: kitchenTwo, alt: "Brown cabinets" },
   { id: 2, src: kitchenTwo, alt: "Modern Brown cabinets" },
@@ -69,11 +86,6 @@ export const showcaseCards = [
 ];
 
 export const kitchenCabinetsTraditional = [
-  {
-    id: 1,
-    image: charcoalBlack,
-    title: "Charcoal Black",
-  },
   {
     id: 2,
     image: chocolateGlazed,
@@ -181,5 +193,83 @@ export const kitchenCabinetsShaker = [
     id: 6,
     image: shakerWhite,
     title: "White",
+  },
+  {
+    id: 7,
+    image: charcoalBlack,
+    title: "Charcoal Black",
+  },
+];
+
+export const vinylPlankingData = [
+  {
+    id: 1,
+    image: atlantis16121,
+    title: "Atlantis 1612-1",
+  },
+  {
+    id: 2,
+    image: atlantis16122,
+    title: "Atlantis 1612-2",
+  },
+  {
+    id: 3,
+    image: atlantis16123,
+    title: "Atlantis 1612-3",
+  },
+  {
+    id: 4,
+    image: atlantis16124,
+    title: "Atlantis 1612-4",
+  },
+  {
+    id: 5,
+    image: blueLagoon16141,
+    title: "Blue Lagoon 1614-1",
+  },
+  {
+    id: 6,
+    image: blueLagoon16142,
+    title: "Blue Lagoon 1614-2",
+  },
+  {
+    id: 7,
+    image: blueLagoon16143,
+    title: "Blue Lagoon 1614-3",
+  },
+  {
+    id: 8,
+    image: blueLagoon16144,
+    title: "Blue Lagoon 1614-4",
+  },
+  {
+    id: 9,
+    image: casaCoral16161,
+    title: "Casa Coral 1616-1",
+  },
+  {
+    id: 10,
+    image: casaCoral16162,
+    title: "Casa Coral 1616-2",
+  },
+  {
+    id: 11,
+    image: casaCoral16163,
+    title: "Casa Coral 1616-3",
+  },
+  {
+    id: 12,
+    image: casaCoral16164,
+    title: "Casa Coral 1616-4",
+  },
+  {
+    id: 13,
+    image: casaCoral16165,
+    title: "Casa Coral 1616-5",
+  },
+  {
+    id: 14,
+    image: casaCoral16166,
+    title: "Casa Coral 1616-6",
   },
 ];
