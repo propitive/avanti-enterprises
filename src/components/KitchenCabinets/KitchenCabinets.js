@@ -40,6 +40,8 @@ function KitchenCabinets() {
             header="Available Traditional"
             productArray={kitchenCabinetsTraditional}
           />
+        </div>
+        <div className="k-cabinets__color-section">
           <ProductLayout
             header="Available Shakers"
             productArray={kitchenCabinetsShaker}
