@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
@@ -26,10 +27,15 @@ function VinylPlanking() {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <BookOnlineButton
-              className="k-cabinets__first-section__button"
-              buttonText="GET A FREE QUOTE"
-            />
+            <Link
+              to="/contact-form"
+              style={{ textDecoration: "none", color: "#f5f0f0" }}
+            >
+              <BookOnlineButton
+                className="k-cabinets__first-section__button"
+                buttonText="GET A FREE QUOTE"
+              />
+            </Link>
           </div>
           <img
             className="k-cabinets__first-section__image"
