@@ -6,6 +6,7 @@ import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import KitchenCabinets from "../KitchenCabinets/KitchenCabinets";
 import BathroomCabinets from "../VinylPlanking/VinylPlanking";
 import VinylPlanking from "../VinylPlanking/VinylPlanking";
+import About from "../About/About";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/contact-form">
           <ContactForm />
+        </Route>
+        <Route path="/about-us">
+          <About />
         </Route>
         <Route path="/">
           <Main />

@@ -34,7 +34,10 @@ function Header() {
         >
           <li className="header__list-item">Vinyl Planking</li>
         </Link>
-        <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+        <Link
+          to="/about-us"
+          style={{ textDecoration: "none", color: "#f5f0f0" }}
+        >
           <li className="header__list-item">About</li>
         </Link>
         {/* <Link

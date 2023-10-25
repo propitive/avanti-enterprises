@@ -175,6 +175,11 @@ export const kitchenCabinetsShaker = [
     title: "Castle Grey",
   },
   {
+    id: 7,
+    image: charcoalBlack,
+    title: "Charcoal Black",
+  },
+  {
     id: 3,
     image: shakerEspresso,
     title: "Espresso",
@@ -193,11 +198,6 @@ export const kitchenCabinetsShaker = [
     id: 6,
     image: shakerWhite,
     title: "White",
-  },
-  {
-    id: 7,
-    image: charcoalBlack,
-    title: "Charcoal Black",
   },
 ];
 
