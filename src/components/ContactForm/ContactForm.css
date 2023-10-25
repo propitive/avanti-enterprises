@@ -81,7 +81,7 @@
   transform: translateX(10px) translateY(-7px);
   font-size: 0.65em;
   padding: 0 10px;
-  background: #fff;
+  background: #f1f2f3;
   border-left: 1px solid black;
   border-right: 1px solid black;
   letter-spacing: 0.2em;
@@ -98,7 +98,7 @@
   transform: translateX(10px) translateY(-7px);
   font-size: 0.65em;
   padding: 0 10px;
-  background: #fff;
+  background: #f1f2f3;
   border-left: 1px solid black;
   border-right: 1px solid black;
   letter-spacing: 0.2em;

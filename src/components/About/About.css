@@ -32,12 +32,16 @@
   align-items: center;
   padding: 40px 0 40px;
   width: calc(100% - 80px);
-  background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
+  background-color: #4a92dc;
   margin: 0 auto 0;
 }
 
 .about__showcase-header {
   margin: 0 0 40px;
+  color: #f1f2f3;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .about__showcase-items {
