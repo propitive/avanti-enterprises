@@ -19,7 +19,8 @@ function About() {
         </div>
         <div className="about__showcase">
           <h2 className="about__showcase-header">
-            Simplifying The Installation Process
+            <a className="about__header__subtitle__emphasis">Simplifying</a> The
+            Installation Process
           </h2>
           <div className="about__showcase-items">
             <div className="about__showcase-item">

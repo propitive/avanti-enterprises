@@ -36,20 +36,14 @@
   align-items: center;
   padding: 40px 0 40px;
   width: calc(100% - 80px);
-  /* background-color: #e5e5e5; */
-  /* background-color: #4a92dc; */
-  background: radial-gradient(
-    circle,
-    rgba(74, 146, 220, 1) 0%,
-    rgba(0, 41, 75, 1) 71%
-  );
+  background-color: #e5e5e5;
   margin: 0 auto 0;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .about__showcase-header {
   margin: 0 0 40px;
-  color: #f1f2f3;
+  color: black;
   /* font-weight: 700; */
   font-size: 40px;
   letter-spacing: 1px;
