@@ -40,10 +40,11 @@
   cursor: pointer;
   color: #fefefa;
   transition: all 0.15s ease-in;
+  font-family: "Rubik", sans-serif, Arial;
 }
 
 .header__list-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   /* color: #4c92d8; */
   /* color: #c50b30; */
 }

@@ -10,8 +10,11 @@ function About() {
         <div className="about__header">
           {/* <h2 className="about__header__header">Installation Experts</h2> */}
           <p className="about__header__subtitle">
-            Disrupting the overpriced home improvement industry with radically
-            fair prices and quality craftsmanship.
+            Disrupting the overpriced home improvement industry with{" "}
+            <a className="about__header__subtitle__emphasis">radically fair</a>{" "}
+            prices and{" "}
+            <a className="about__header__subtitle__emphasis">quality</a>{" "}
+            craftsmanship.
           </p>
         </div>
         <div className="about__showcase">
