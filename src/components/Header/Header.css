@@ -21,6 +21,10 @@
   height: 26px;
 }
 
+.header__logo {
+  height: 70px;
+}
+
 .header__navbar {
   position: absolute;
   right: 0;
@@ -47,4 +51,17 @@
   transform: translateY(-3px);
   /* color: #4c92d8; */
   /* color: #c50b30; */
+}
+
+@media screen and (max-width: 1300px) {
+  .header__navbar {
+    position: relative;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    height: 60px;
+  }
 }

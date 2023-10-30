@@ -1,20 +1,22 @@
 import { Link } from "react-router-dom";
 import iconInstagram from "../../images/icons/instagram.svg";
 import iconFacebook from "../../images/icons/facebook.svg";
+import avantiLogo from "../../images/icons/avantiLogo.png";
 
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
 function Header() {
   return (
     <header className="header">
-      <div className="header__icons">
+      {/* <div className="header__icons">
         <img
           className="header__icon"
           src={iconInstagram}
           alt="Instagram logo"
         />
         <img className="header__icon" src={iconFacebook} alt="Facebook logo" />
-      </div>
+      </div> */}
+      <img className="header__logo" src={avantiLogo} alt="Avanti logo" />
       <ul className="header__navbar">
         <Link
           to="/services/kitchen-cabinets"
