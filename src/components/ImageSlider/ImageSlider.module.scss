@@ -86,16 +86,42 @@ $breakpoints: (
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
+
+      @include xs {
+        height: 45px;
+        width: 45px;
+      }
+
+      @include breakpoint(600px) {
+        width: 50px;
+        height: 50px;
+      }
     }
     .swiperNavPrev {
       left: 0;
       background-image: url("../../images/icons/iconLeftArrow.png");
       margin-left: 40px;
+
+      @include xs {
+        margin-left: 30px;
+      }
+
+      @include breakpoint(600px) {
+        margin-left: 40px;
+      }
     }
     .swiperNavNext {
       right: 0;
       background-image: url("../../images/icons/iconRightArrow.png");
       margin-right: 40px;
+
+      @include xs {
+        margin-right: 30px;
+      }
+
+      @include breakpoint(600px) {
+        margin-right: 40px;
+      }
     }
   }
 }
