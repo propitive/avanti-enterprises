@@ -23,6 +23,9 @@
 
 .header__logo {
   height: 70px;
+  cursor: pointer;
+  position: relative;
+  z-index: 4;
 }
 
 .header__navbar {

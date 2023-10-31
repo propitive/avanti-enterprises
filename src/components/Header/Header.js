@@ -16,7 +16,9 @@ function Header() {
         />
         <img className="header__icon" src={iconFacebook} alt="Facebook logo" />
       </div> */}
-      <img className="header__logo" src={avantiLogo} alt="Avanti logo" />
+      <Link to="/" style={{ textDecoration: "none", color: "#f5f0f0" }}>
+        <img className="header__logo" src={avantiLogo} alt="Avanti logo" />
+      </Link>
       <ul className="header__navbar">
         <Link
           to="/services/kitchen-cabinets"
