@@ -90,6 +90,7 @@
   }
   .showcase__title {
     font-size: 35px;
+    color: red;
   }
 }
 
@@ -101,6 +102,10 @@
   .showcase__image {
     width: 400px;
     height: 250px;
+  }
+  .showcase__title {
+    font-size: 35px;
+    color: blue;
   }
 }
 
@@ -115,6 +120,7 @@
   }
   .showcase__title {
     font-size: 28px;
+    color: green;
   }
 }
 
