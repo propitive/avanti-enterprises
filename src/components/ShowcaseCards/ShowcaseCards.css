@@ -129,3 +129,28 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .showcase {
+    margin: 40px 0 40px;
+  }
+  .showcase__card {
+    width: 400px;
+    height: 200px;
+  }
+  .showcase__image {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .showcase__card {
+    width: 300px;
+    height: 170px;
+  }
+  .showcase__image {
+    width: 300px;
+    height: 170px;
+  }
+}
