@@ -8,6 +8,7 @@
 @import url("/src/components/ContactForm/ContactForm.css");
 @import url("/src/components/Footer/Footer.css");
 @import url("/src/components/Header/Header.css");
+@import url("/src/components/Dropdown/Dropdown.css");
 @import url("/src/components/ProductLayout/ProductLayout.css");
 @import url("/src/components/KitchenCabinets/KitchenCabinets.css");
 @import url("/src/components/ShowcaseCards/ShowcaseCards.css");
@@ -20,6 +21,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f1f2f3;
+  /* background-color: #ffa586; */
+
   font-family: "Rubik", sans-serif, Arial;
 }
 

@@ -88,10 +88,6 @@
     width: 500px;
     height: 300px;
   }
-  .showcase__title {
-    font-size: 35px;
-    color: red;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -102,10 +98,6 @@
   .showcase__image {
     width: 400px;
     height: 250px;
-  }
-  .showcase__title {
-    font-size: 35px;
-    color: blue;
   }
 }
 
@@ -120,7 +112,6 @@
   }
   .showcase__title {
     font-size: 28px;
-    color: green;
   }
 }
 

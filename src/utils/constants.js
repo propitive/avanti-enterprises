@@ -276,3 +276,18 @@ export const vinylPlankingData = [
     title: "Casa Coral 1616-6",
   },
 ];
+
+export const menuNavItems = [
+  {
+    id: 1,
+    title: "Bathroom Cabinets",
+    path: "/services/bathroom-cabinets",
+    className: "nav-item",
+  },
+  {
+    id: 2,
+    title: "Kitchen Cabinets",
+    path: "/services/kitchen-cabinets",
+    className: "nav-item",
+  },
+];

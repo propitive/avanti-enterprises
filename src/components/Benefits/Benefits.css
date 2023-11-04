@@ -15,6 +15,7 @@
 .benefits__header {
   text-align: center;
   margin: 50px 0 50px;
+  width: calc(100% - 50px);
 }
 
 .benefits__text-container {
