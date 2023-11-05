@@ -1,5 +1,5 @@
 .services-submenu {
-  width: 236px;
+  width: 248px;
   position: absolute;
   list-style: none;
   text-align: start;
@@ -20,8 +20,7 @@
 .dropdown__li:last-child:hover {
   /* background-color: rgba(21, 23, 23); */
   background-color: rgba(0, 41, 75, 0.9);
-
-  width: 236px;
+  width: 248px;
   color: #e5e5e5;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -30,7 +29,7 @@
 .dropdown__li:hover {
   /* background-color: rgba(21, 23, 23); */
   background-color: rgba(0, 41, 75, 0.9);
-  width: 236px;
+  width: 248px;
   color: #e5e5e5;
 }
 
