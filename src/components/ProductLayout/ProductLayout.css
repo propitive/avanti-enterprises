@@ -14,9 +14,7 @@
 
 .product-layout__colors-section {
   /* width: 880px; */
-  /* max-width: calc(100% - 400px); */
-
-  max-width: calc(100% - 200px);
+  max-width: calc(100% - 100px);
   box-sizing: border-box;
   position: relative;
   margin-right: auto;

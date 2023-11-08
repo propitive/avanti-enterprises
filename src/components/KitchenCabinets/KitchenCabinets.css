@@ -70,6 +70,10 @@
     height: 500px;
     background-color: blue;
   }
+  .k-cabinets__first-section__description {
+    margin: auto 30px auto 0;
+    max-width: 455px;
+  }
   .k-cabinets__first-section__header {
     font-size: 40px;
   }
@@ -77,8 +81,8 @@
     margin: 10px 0 30px;
     font-size: 20px;
   }
-  .k-cabinets__first-section__description {
-    margin: auto 30px auto 0;
+  .k-cabinets__first-section__button {
+    width: 55%;
   }
   .k-cabinets__first-section__image {
     width: 600px;
@@ -154,6 +158,7 @@
     max-width: 330px;
   }
   .k-cabinets__first-section__header {
+    line-height: 30px;
     font-size: 30px;
   }
   .k-cabinets__first-section__button {
