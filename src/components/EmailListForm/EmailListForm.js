@@ -12,7 +12,10 @@ function EmailListForm() {
           placeholder="Email Address"
           required
         />
-        <BookOnlineButton buttonText="SUBSCRIBE" />
+        <BookOnlineButton
+          buttonText="SUBSCRIBE"
+          className="email-list__button"
+        />
       </form>
     </div>
   );

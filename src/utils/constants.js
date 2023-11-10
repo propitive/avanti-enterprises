@@ -291,3 +291,26 @@ export const menuNavItems = [
     className: "nav-item",
   },
 ];
+
+export const SidebarData = [
+  {
+    title: "Bathroom Cabinets",
+    path: "/services/bathroom-cabinets",
+    cName: "nav-text",
+  },
+  {
+    title: "Kitchen Cabinets",
+    path: "/services/kitchen-cabinets",
+    cName: "nav-text",
+  },
+  {
+    title: "Vinyl Planking",
+    path: "/services/vinyl-planking",
+    cName: "nav-text",
+  },
+  {
+    title: "About",
+    path: "/about-us",
+    cName: "nav-text",
+  },
+];
