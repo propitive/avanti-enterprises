@@ -39,7 +39,35 @@
   }
 }
 
-/* .footer__column-link {
-    color: white;
-    transform: translateX(10px);
-} */
+@media screen and (max-width: 1240px) {
+  .footer {
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .footer {
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px 20px 100px;
+  }
+  .footer__links {
+    width: 100%;
+    justify-content: center;
+  }
+  .email-list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .footer__links {
+    justify-content: space-between;
+  }
+  .footer__column-title {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+  .footer__column-link {
+    font-size: 17px;
+  }
+}

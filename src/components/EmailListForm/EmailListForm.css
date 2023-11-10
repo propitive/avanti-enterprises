@@ -30,3 +30,13 @@
   height: 40px;
   width: 115px;
 }
+
+@media screen and (max-width: 410px) {
+  .email-list__form {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .email-list__input {
+    width: calc(100% - 12px);
+  }
+}
