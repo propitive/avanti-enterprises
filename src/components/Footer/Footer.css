@@ -52,7 +52,9 @@
   }
   .footer__links {
     width: 100%;
-    justify-content: center;
+    max-width: 520px;
+    justify-content: space-between;
+    margin: 0 auto 0;
   }
   .email-list {
     width: 100%;
