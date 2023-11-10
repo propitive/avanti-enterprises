@@ -88,12 +88,21 @@
   /* color: #c50b30; */
 }
 
+.menu__container {
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  height: 105px;
+}
+
 .navbar {
   background-color: transparent;
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  position: relative;
 }
 
 .menu-bars {
@@ -194,7 +203,7 @@
   font-size: 15px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 950px) {
   .header {
     height: 90px;
   }
