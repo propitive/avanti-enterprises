@@ -10,6 +10,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: calc(100% - 80px);
+  margin: 0 auto 0;
   /* filter: brightness(0.8); */
 }
 
@@ -22,7 +24,8 @@
   font-family: "Tilt Neon", sans-serif, Arial;
   margin: 0;
   text-align: center;
-  width: 1215px;
+  width: 100%;
+  max-width: 1215px;
   font-size: 50px;
 }
 
@@ -119,3 +122,38 @@
 .about__what-icons {
   width: 500px;
 }
+
+@media screen and (max-width: 1300px) {
+  .about__showcase {
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__showcase {
+    background-color: green;
+  }
+}
+
+/* @media screen and (max-width: 1240px) {
+  .about__showcase {
+    background-color: pink;
+  }
+} */
+
+/* @media screen and (max-width: 1240px) {
+  .about__showcase {
+    background-color: pink;
+  }
+} */
+
+/* @media screen and (max-width: 1240px) {
+  .about__showcase {
+    background-color: pink;
+  }
+} */
+/* @media screen and (max-width: 1240px) {
+  .about__showcase {
+    background-color: pink;
+  }
+} */
