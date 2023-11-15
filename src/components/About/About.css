@@ -284,6 +284,9 @@
   .about__showcase {
     background-color: rgb(0, 217, 255);
   }
+  .about__header__subtitle {
+    font-size: 28px;
+  }
   .about__showcase-header {
     font-size: 24px;
   }
@@ -300,5 +303,109 @@
   }
   .about__showcase-item__subtitle {
     font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .about__showcase {
+    background-color: rgb(51, 0, 255);
+  }
+  .about__header {
+    height: 200px;
+  }
+  .about__header__subtitle {
+    font-size: 25px;
+  }
+  .about__showcase-header {
+    font-size: 22px;
+  }
+  .about__showcase-items {
+    width: 310px;
+    height: 160px;
+  }
+  .about__showcase-item {
+    width: 120px;
+    height: 60px;
+  }
+  .about__showcase-item__subtitle {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  .about__showcase {
+    background-color: green;
+  }
+  .about__header {
+    height: 180px;
+  }
+  .about__header__subtitle {
+    font-size: 23px;
+  }
+  .about__showcase-header {
+    font-size: 20px;
+  }
+  .about__showcase-items {
+    width: 310px;
+    height: 160px;
+  }
+  .about__showcase-item {
+    width: 120px;
+    height: 60px;
+  }
+  .about__showcase-item__subtitle {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about__showcase {
+    background-color: teal;
+  }
+  .about__header__subtitle {
+    font-size: 22px;
+  }
+  .about__showcase-header {
+    font-size: 19px;
+  }
+  .about__showcase-items {
+    width: 310px;
+    height: 160px;
+  }
+  .about__showcase-item {
+    width: 120px;
+    height: 60px;
+  }
+  .about__showcase-item__subtitle {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__showcase {
+    background-color: brown;
+  }
+  .about__header__subtitle {
+    font-size: 21px;
+  }
+  .about__showcase-header {
+    font-size: 17px;
+  }
+  .about__showcase-items {
+    width: 310px;
+    height: 160px;
+  }
+  .about__showcase-item {
+    width: 120px;
+    height: 60px;
+  }
+  .about__showcase-item__subtitle {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .about__header__subtitle {
+    font-size: 20px;
   }
 }
