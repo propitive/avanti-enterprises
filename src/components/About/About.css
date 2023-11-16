@@ -98,12 +98,21 @@
 .about__what {
   width: calc(100% - 80px);
   margin: 0 auto 0;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .about__what-card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 500px;
 }
 
 .about__what-card__icon {
+  width: 30px;
+  height: 30px;
+  margin: auto;
 }
 
 .about__what-card__paragraph {

@@ -1,6 +1,6 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import facebook from "../../images/icons/facebook.svg";
+import facebook from "../../images/icons/iconLeftArrow.png";
 import waveBackground from "../../images/about/waveBackground.svg";
 
 function About() {
@@ -47,7 +47,7 @@ function About() {
         </div>
         <div className="about__what">
           <div className="about__what-card">
-            <img className="about__what-card__icon" img={facebook} />
+            <img className="about__what-card__icon" src={facebook} />
             <p className="about__what-card__paragraph">
               Each project is approached with an exacting eye, ensuring
               measurements are precise, materials are of the highest quality,
@@ -58,7 +58,7 @@ function About() {
             </p>
           </div>
           <div className="about__what-card">
-            <img className="about__what-card__icon" img={facebook} />
+            <img className="about__what-card__icon" src={facebook} />
             <p className="about__what-card__paragraph">
               Each project is approached with an exacting eye, ensuring
               measurements are precise, materials are of the highest quality,
@@ -69,7 +69,7 @@ function About() {
             </p>
           </div>
           <div className="about__what-card">
-            <img className="about__what-card__icon" img={facebook} />
+            <img className="about__what-card__icon" src={facebook} />
             <p className="about__what-card__paragraph">
               Each project is approached with an exacting eye, ensuring
               measurements are precise, materials are of the highest quality,
@@ -80,7 +80,7 @@ function About() {
             </p>
           </div>
           <div className="about__what-card">
-            <img className="about__what-card__icon" img={facebook} />
+            <img className="about__what-card__icon" src={facebook} />
             <p className="about__what-card__paragraph">
               Each project is approached with an exacting eye, ensuring
               measurements are precise, materials are of the highest quality,
@@ -91,7 +91,7 @@ function About() {
             </p>
           </div>
           <div className="about__what-card">
-            <img className="about__what-card__icon" img={facebook} />
+            <img className="about__what-card__icon" src={facebook} />
             <p className="about__what-card__paragraph">
               Each project is approached with an exacting eye, ensuring
               measurements are precise, materials are of the highest quality,
@@ -102,7 +102,7 @@ function About() {
             </p>
           </div>
           <div className="about__what-card">
-            <img className="about__what-card__icon" img={facebook} />
+            <img className="about__what-card__icon" src={facebook} />
             <p className="about__what-card__paragraph">
               Each project is approached with an exacting eye, ensuring
               measurements are precise, materials are of the highest quality,
