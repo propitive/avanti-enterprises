@@ -96,31 +96,17 @@
 }
 
 .about__what {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: calc(100% - 80px);
   margin: 0 auto 0;
 }
 
-.about__what-text {
-  width: 500px;
+.about__what-card {
 }
 
-.about__what-text__header {
+.about__what-card__icon {
 }
 
-.about__what-text__title {
-}
-
-.about__what-text__subtitle {
-}
-
-.about__what-text__paragraph {
-}
-
-.about__what-icons {
-  width: 500px;
+.about__what-card__paragraph {
 }
 
 @media screen and (max-width: 1300px) {

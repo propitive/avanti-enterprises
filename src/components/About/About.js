@@ -1,5 +1,6 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import facebook from "../../images/icons/facebook.svg";
 import waveBackground from "../../images/about/waveBackground.svg";
 
 function About() {
@@ -8,7 +9,6 @@ function About() {
       <Header />
       <div className="about">
         <div className="about__header">
-          {/* <h2 className="about__header__header">Installation Experts</h2> */}
           <p className="about__header__subtitle">
             Disrupting the overpriced home improvement industry with{" "}
             <a className="about__header__subtitle__emphasis">radically fair</a>{" "}
@@ -46,43 +46,72 @@ function About() {
           </div>
         </div>
         <div className="about__what">
-          <div className="about__what-text">
-            <h2 className="about__what-text__header">What We Do</h2>
-            <p className="about__what-text__title">
-              Honestly, no one does what we do
-            </p>
-            <p className="about__what-text__subtitle">
-              Client-satisfying, datail-oriented home improvement experts.
-            </p>
-            <p className="about__what-text__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p className="about__what-text__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <p className="about__what-text__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div className="about__what-card">
+            <img className="about__what-card__icon" img={facebook} />
+            <p className="about__what-card__paragraph">
+              Each project is approached with an exacting eye, ensuring
+              measurements are precise, materials are of the highest quality,
+              and every element is seamlessly integrated. Our passion for
+              perfection drives us to exceed industry standards, setting a new
+              benchmark for precision and detail that distinguishes our work as
+              true masterpieces in both form and function.
             </p>
           </div>
-          <div className="about__what-icons"></div>
+          <div className="about__what-card">
+            <img className="about__what-card__icon" img={facebook} />
+            <p className="about__what-card__paragraph">
+              Each project is approached with an exacting eye, ensuring
+              measurements are precise, materials are of the highest quality,
+              and every element is seamlessly integrated. Our passion for
+              perfection drives us to exceed industry standards, setting a new
+              benchmark for precision and detail that distinguishes our work as
+              true masterpieces in both form and function.
+            </p>
+          </div>
+          <div className="about__what-card">
+            <img className="about__what-card__icon" img={facebook} />
+            <p className="about__what-card__paragraph">
+              Each project is approached with an exacting eye, ensuring
+              measurements are precise, materials are of the highest quality,
+              and every element is seamlessly integrated. Our passion for
+              perfection drives us to exceed industry standards, setting a new
+              benchmark for precision and detail that distinguishes our work as
+              true masterpieces in both form and function.
+            </p>
+          </div>
+          <div className="about__what-card">
+            <img className="about__what-card__icon" img={facebook} />
+            <p className="about__what-card__paragraph">
+              Each project is approached with an exacting eye, ensuring
+              measurements are precise, materials are of the highest quality,
+              and every element is seamlessly integrated. Our passion for
+              perfection drives us to exceed industry standards, setting a new
+              benchmark for precision and detail that distinguishes our work as
+              true masterpieces in both form and function.
+            </p>
+          </div>
+          <div className="about__what-card">
+            <img className="about__what-card__icon" img={facebook} />
+            <p className="about__what-card__paragraph">
+              Each project is approached with an exacting eye, ensuring
+              measurements are precise, materials are of the highest quality,
+              and every element is seamlessly integrated. Our passion for
+              perfection drives us to exceed industry standards, setting a new
+              benchmark for precision and detail that distinguishes our work as
+              true masterpieces in both form and function.
+            </p>
+          </div>
+          <div className="about__what-card">
+            <img className="about__what-card__icon" img={facebook} />
+            <p className="about__what-card__paragraph">
+              Each project is approached with an exacting eye, ensuring
+              measurements are precise, materials are of the highest quality,
+              and every element is seamlessly integrated. Our passion for
+              perfection drives us to exceed industry standards, setting a new
+              benchmark for precision and detail that distinguishes our work as
+              true masterpieces in both form and function.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
