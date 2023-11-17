@@ -53,12 +53,12 @@ import casaCoral16166 from "../images/products/vinylPlanking/vertCasaCoral1616-6
 
 //// ABOUT INFO CARDS ////
 
-import aboutBusinessman from "../images/icons/about/aboutBusinessman.png";
 import aboutChecklist from "../images/icons/about/aboutChecklist.png";
-import aboutEye from "../images/icons/about/aboutEye.png";
 import aboutHandshake from "../images/icons/about/aboutHandshake.png";
 import aboutHourglass from "../images/icons/about/aboutHourglass.png";
 import aboutMagnifier from "../images/icons/about/aboutMagnifier.png";
+import aboutMedal from "../images/icons/about/aboutBusinessman.png";
+import aboutPiggyBank from "../images/icons/about/aboutEye.png";
 
 export const imageSliderPhotos = [
   { id: 1, src: kitchenTwo, alt: "Brown cabinets" },
@@ -346,12 +346,12 @@ export const aboutInfoCards = [
       "From the initial consultation to the final installation, we adhere to strict timelines, providing you with a seamless and efficient experience; ensuring punctual project delivery without compromising the precision and excellence that define us.",
   },
   {
-    icon: aboutEye,
+    icon: aboutPiggyBank,
     paragraph:
       "Our transparent pricing model ensures that you are well-informed at every stage of the process. By meticulously managing costs without compromising quality, we guarantee not only affordability but also unparalleled value for money. ",
   },
   {
-    icon: aboutBusinessman,
+    icon: aboutMedal,
     paragraph:
       "With several years of invaluable experience in the industry, our seasoned team brings a wealth of knowledge to every project, ensuring precision and excellence in every detail. We take pride in upholding the highest standards of professionalism.",
   },
