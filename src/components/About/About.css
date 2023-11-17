@@ -97,25 +97,44 @@
 
 .about__what {
   width: calc(100% - 80px);
-  margin: 0 auto 0;
+  margin: 80px auto 80px;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .about__what-card {
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  width: 500px;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  height: min-content;
+  margin: auto;
+
+  box-shadow: none;
+  border-radius: 0px;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    /* transition: all 1s ease-in-out; */
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    /* top: -4px; */
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
 }
 
 .about__what-card__icon {
   width: 30px;
   height: 30px;
   margin: auto;
+  margin: auto 0 auto 10px;
 }
 
 .about__what-card__paragraph {
+  margin: 10px 10px 10px 0;
 }
 
 @media screen and (max-width: 1300px) {

@@ -2,6 +2,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import facebook from "../../images/icons/iconLeftArrow.png";
 import waveBackground from "../../images/about/waveBackground.svg";
+import { aboutInfoCards } from "../../utils/constants";
 
 function About() {
   return (
@@ -46,72 +47,14 @@ function About() {
           </div>
         </div>
         <div className="about__what">
-          <div className="about__what-card">
-            <img className="about__what-card__icon" src={facebook} />
-            <p className="about__what-card__paragraph">
-              Each project is approached with an exacting eye, ensuring
-              measurements are precise, materials are of the highest quality,
-              and every element is seamlessly integrated. Our passion for
-              perfection drives us to exceed industry standards, setting a new
-              benchmark for precision and detail that distinguishes our work as
-              true masterpieces in both form and function.
-            </p>
-          </div>
-          <div className="about__what-card">
-            <img className="about__what-card__icon" src={facebook} />
-            <p className="about__what-card__paragraph">
-              Each project is approached with an exacting eye, ensuring
-              measurements are precise, materials are of the highest quality,
-              and every element is seamlessly integrated. Our passion for
-              perfection drives us to exceed industry standards, setting a new
-              benchmark for precision and detail that distinguishes our work as
-              true masterpieces in both form and function.
-            </p>
-          </div>
-          <div className="about__what-card">
-            <img className="about__what-card__icon" src={facebook} />
-            <p className="about__what-card__paragraph">
-              Each project is approached with an exacting eye, ensuring
-              measurements are precise, materials are of the highest quality,
-              and every element is seamlessly integrated. Our passion for
-              perfection drives us to exceed industry standards, setting a new
-              benchmark for precision and detail that distinguishes our work as
-              true masterpieces in both form and function.
-            </p>
-          </div>
-          <div className="about__what-card">
-            <img className="about__what-card__icon" src={facebook} />
-            <p className="about__what-card__paragraph">
-              Each project is approached with an exacting eye, ensuring
-              measurements are precise, materials are of the highest quality,
-              and every element is seamlessly integrated. Our passion for
-              perfection drives us to exceed industry standards, setting a new
-              benchmark for precision and detail that distinguishes our work as
-              true masterpieces in both form and function.
-            </p>
-          </div>
-          <div className="about__what-card">
-            <img className="about__what-card__icon" src={facebook} />
-            <p className="about__what-card__paragraph">
-              Each project is approached with an exacting eye, ensuring
-              measurements are precise, materials are of the highest quality,
-              and every element is seamlessly integrated. Our passion for
-              perfection drives us to exceed industry standards, setting a new
-              benchmark for precision and detail that distinguishes our work as
-              true masterpieces in both form and function.
-            </p>
-          </div>
-          <div className="about__what-card">
-            <img className="about__what-card__icon" src={facebook} />
-            <p className="about__what-card__paragraph">
-              Each project is approached with an exacting eye, ensuring
-              measurements are precise, materials are of the highest quality,
-              and every element is seamlessly integrated. Our passion for
-              perfection drives us to exceed industry standards, setting a new
-              benchmark for precision and detail that distinguishes our work as
-              true masterpieces in both form and function.
-            </p>
-          </div>
+          {aboutInfoCards.map((info) => {
+            return (
+              <div className="about__what-card">
+                <img className="about__what-card__icon" src={info.icon} />
+                <p className="about__what-card__paragraph">{info.paragraph}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
       <Footer />
