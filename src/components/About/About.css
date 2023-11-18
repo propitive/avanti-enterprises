@@ -137,6 +137,7 @@
   margin: 10px 10px 10px 0;
   font-size: 18px;
   line-height: 25px;
+  cursor: default;
 }
 
 @media screen and (max-width: 1300px) {
@@ -488,6 +489,9 @@
   }
   .about__showcase-item__subtitle {
     font-size: 13px;
+  }
+  .about__what {
+    margin: 60px auto 100px;
   }
   .about__what-card__paragraph {
     font-size: 12px;

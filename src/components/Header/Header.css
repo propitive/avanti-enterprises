@@ -62,7 +62,7 @@
   cursor: pointer;
   transition: color 0.15s ease-in;
   /* color: hsl(345deg 100% 47%); */
-  height: 64px;
+  height: 66px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -256,5 +256,8 @@
 @media screen and (max-width: 400px) {
   .nav-text {
     height: 40px;
+  }
+  .header__logo {
+    height: 50px;
   }
 }
