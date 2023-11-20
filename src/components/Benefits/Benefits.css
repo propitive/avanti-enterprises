@@ -1,7 +1,7 @@
 .benefits {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .benefits__container {
@@ -16,6 +16,7 @@
   text-align: center;
   margin: 50px 0 50px;
   width: calc(100% - 50px);
+  font-size: 40px;
 }
 
 .benefits__text-container {
@@ -57,5 +58,40 @@
   .benefits__column {
     width: 100%;
     max-width: fit-content;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .benefits__header {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .benefits__header {
+    font-size: 25px;
+    margin: 30px 0 30px;
+  }
+  .benefits__text-container {
+    gap: 20px;
+    width: calc(100% - 20px);
+    margin: 0 0 40px;
+  }
+  .benefits__column-title {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .benefits__header {
+    font-size: 20px;
+  }
+  .showcase__image {
+    width: 100%;
+    max-width: 100%;
+  }
+  .showcase__card {
+    width: 100%;
+    max-width: 500px;
   }
 }
