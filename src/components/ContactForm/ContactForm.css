@@ -117,3 +117,18 @@
 .contact-form__button {
   margin-top: 40px;
 }
+
+@media screen and (max-width: 450px) {
+  .contact-form__header {
+    font-size: 50px;
+  }
+  .form__input-box {
+    width: 380px;
+  }
+  .form__input {
+    width: 300px;
+  }
+  .form__input-number {
+    width: 310px;
+  }
+}

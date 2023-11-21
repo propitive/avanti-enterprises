@@ -98,10 +98,12 @@ function Header() {
                 </li>
               );
             })}
-            <BookOnlineButton
-              className="nav-menu__button"
-              buttonText="GET A FREE QUOTE"
-            />
+            <Link to="/contact-form">
+              <BookOnlineButton
+                className="nav-menu__button"
+                buttonText="GET A FREE QUOTE"
+              />
+            </Link>
           </ul>
         </nav>
       </div>
