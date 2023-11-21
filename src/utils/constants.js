@@ -70,30 +70,30 @@ export const imageSliderPhotos = [
 export const showcaseCards = [
   {
     id: 1,
-    path: "/services/bathroom-cabinets",
     src: bathroomCabinets,
     alt: "Bathroom cabinets",
     title: "Bathroom Cabinets",
     paragraph:
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
+    link: "/services/bathroom-cabinets",
   },
   {
     id: 2,
-    path: "/servics/kitchen-cabinets",
     src: kitchenCabinets,
     alt: "Kitchen cabinets",
     title: "Kitchen Cabinets",
     paragraph:
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
+    link: "/services/kitchen-cabinets",
   },
   {
     id: 3,
-    path: "/services/vinyl-planking",
     src: vinylPlanking,
     alt: "Vinyl Planking",
     title: "Vinyl Planking",
     paragraph:
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
+    link: "/services/vinyl-planking",
   },
 ];
 
