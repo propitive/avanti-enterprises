@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { InputMask } from "primereact/inputmask";
@@ -69,15 +68,23 @@ function ContactForm() {
           />
           <span className="form__input-span">Number</span>
         </div>
-        <Link
+        {/* <Link
           to="/contact-form"
           style={{ textDecoration: "none", color: "#f5f0f0" }}
+        > */}
+        <BookOnlineButton
+          className="contact-form__button"
+          buttonText="GET A FREE QUOTE"
+        />
+        {/* <button
+          className={"book-online__button " + "contact-form__button"}
+          type="submit"
         >
-          <BookOnlineButton
-            className="contact-form__button"
-            buttonText="GET A FREE QUOTE"
-          />
-        </Link>
+          <span className="book-online__button-shadow"></span>
+          <span className="book-online__button-edge"></span>
+          <span className="book-online__button-text">GET A FREE QUOTE</span>
+        </button> */}
+        {/* </Link> */}
       </form>
       <Footer />
     </>

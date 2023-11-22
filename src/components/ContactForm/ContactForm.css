@@ -123,12 +123,14 @@
     font-size: 50px;
   }
   .form__input-box {
-    width: 380px;
+    width: 360px;
   }
   .form__input {
     width: 300px;
+    margin-left: 25px;
   }
   .form__input-number {
     width: 310px;
+    margin-left: 25px;
   }
 }
