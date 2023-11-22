@@ -19,13 +19,13 @@ function VinylPlanking() {
         <div className="k-cabinets__first-section">
           <div className="k-cabinets__first-section__description">
             <h3 className="k-cabinets__first-section__header">
-              Lorem ipsum dolor sit amet
+              Vinyl Planking
             </h3>
             <p className="k-cabinets__first-section__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Elevate your space with our premium vinyl planking, offering a
+              perfect fusion of style and durability. Choose our vinyl planking
+              for a stunning, low-maintenance flooring solution that brings both
+              sophistication and resilience to your living spaces.
             </p>
             <Link
               to="/contact-form"
