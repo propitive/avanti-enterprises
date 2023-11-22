@@ -22,13 +22,13 @@ function KitchenCabinets() {
         <div className="k-cabinets__first-section">
           <div className="k-cabinets__first-section__description">
             <h3 className="k-cabinets__first-section__header">
-              Lorem ipsum dolor sit amet
+              Kitchen Cabinets
             </h3>
             <p className="k-cabinets__first-section__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Our kitchen cabinets are meticulously crafted with a focus on both
+              aesthetics and functionality. Choose our kitchen cabinets for a
+              perfect blend of durability, style, and smart functionality that
+              will elevate the heart of your home.
             </p>
             <Link
               to="/contact-form"
