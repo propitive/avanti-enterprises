@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import { useState } from "react";
 
 import ContactForm from "../ContactForm/ContactForm";
 import Main from "../Main/Main";
@@ -7,8 +8,19 @@ import KitchenCabinets from "../KitchenCabinets/KitchenCabinets";
 import BathroomCabinets from "../VinylPlanking/VinylPlanking";
 import VinylPlanking from "../VinylPlanking/VinylPlanking";
 import About from "../About/About";
+import ModalContactForm from "../ModalContactForm/ModalContactForm";
 
 function App() {
+  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(true);
+
+  const handleOpenModal = () => {
+    setIsContactFormModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsContactFormModalOpen(false);
+  };
+
   return (
     <>
       <ScrollToTop />
@@ -20,7 +32,7 @@ function App() {
           <VinylPlanking />
         </Route>
         <Route path="/contact-form">
-          <ContactForm />
+          <ContactForm handleOpenModal={handleOpenModal} />
         </Route>
         <Route path="/about-us">
           <About />
@@ -29,6 +41,12 @@ function App() {
           <Main />
         </Route>
       </Switch>
+      {isContactFormModalOpen && (
+        <ModalContactForm
+          handleCloseModal={handleCloseModal}
+          isOpen={isContactFormModalOpen}
+        />
+      )}
     </>
   );
 }

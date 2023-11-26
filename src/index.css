@@ -11,6 +11,8 @@
 @import url("/src/components/Dropdown/Dropdown.css");
 @import url("/src/components/ProductLayout/ProductLayout.css");
 @import url("/src/components/KitchenCabinets/KitchenCabinets.css");
+@import url("/src/components/ModalContactForm/ModalContactForm.css");
+@import url("/src/components/ModalTemplate/ModalTemplate.css");
 @import url("/src/components/ShowcaseCards/ShowcaseCards.css");
 
 body {

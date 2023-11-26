@@ -6,7 +6,7 @@ import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
-function ContactForm() {
+function ContactForm({ handleOpenModal }) {
   const form = useRef();
   const [numberValue, setNumberValue] = useState(null);
 
@@ -23,6 +23,7 @@ function ContactForm() {
       .then(
         (result) => {
           console.log(result.text);
+          handleOpenModal();
         },
         (error) => {
           console.log(error.text);
