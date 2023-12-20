@@ -11,7 +11,7 @@ import About from "../About/About";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
 
 function App() {
-  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(true);
+  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
 
   const handleOpenModal = () => {
     setIsContactFormModalOpen(true);

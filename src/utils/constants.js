@@ -6,7 +6,9 @@ import kitchenFour from "../images/imageSlider/kitchenFourJPG.jpg";
 
 //// SHOWCASE CARDS ////
 import bathroomCabinets from "../images/showcaseCards/bathroomCabinets.jpg";
+import bathroomCabinetsNew from "../images/showcaseCards/bathroomCabinetsNew.png";
 import kitchenCabinets from "../images/showcaseCards/kitchenCabinets.jpg";
+import kitchenCabinetsNew from "../images/showcaseCards/kitchenCabinetsNew.jpg";
 import vinylPlanking from "../images/showcaseCards/vinylPlanking.jpg";
 
 //// PRODUCTS KITCHEN CABINETS ////
@@ -70,7 +72,7 @@ export const imageSliderPhotos = [
 export const showcaseCards = [
   {
     id: 1,
-    src: bathroomCabinets,
+    src: bathroomCabinetsNew,
     alt: "Bathroom cabinets",
     title: "Bathroom Cabinets",
     paragraph:
@@ -79,7 +81,7 @@ export const showcaseCards = [
   },
   {
     id: 2,
-    src: kitchenCabinets,
+    src: kitchenCabinetsNew,
     alt: "Kitchen cabinets",
     title: "Kitchen Cabinets",
     paragraph:

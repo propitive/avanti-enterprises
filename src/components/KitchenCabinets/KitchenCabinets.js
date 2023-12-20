@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
-import kitchenParallax from "../../images/servicesParallax/kitchenCabinets.jpg";
-import kitchenImage from "../../images/showcaseCards/kitchenCabinets.jpg";
+import kitchenParallax from "../../images/servicesParallax/kitchenCabinetsParallax.jpg";
+import kitchenImage from "../../images/showcaseCards/kitchenCabinetsNew2.jpg";
 import {
   kitchenCabinetsShaker,
   kitchenCabinetsTraditional,
