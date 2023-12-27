@@ -5,7 +5,7 @@ import ContactForm from "../ContactForm/ContactForm";
 import Main from "../Main/Main";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
 import KitchenCabinets from "../KitchenCabinets/KitchenCabinets";
-import BathroomCabinets from "../VinylPlanking/VinylPlanking";
+import BathroomCabinets from "../BathroomCabinets/BathroomCabinets";
 import VinylPlanking from "../VinylPlanking/VinylPlanking";
 import About from "../About/About";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
@@ -27,6 +27,9 @@ function App() {
       <Switch>
         <Route path="/services/kitchen-cabinets">
           <KitchenCabinets />
+        </Route>
+        <Route path="/services/bathroom-cabinets">
+          <BathroomCabinets />
         </Route>
         <Route path="/services/vinyl-planking">
           <VinylPlanking />
