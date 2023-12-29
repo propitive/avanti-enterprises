@@ -37,7 +37,7 @@
 .modal__title {
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 22px;
   margin: 0 0 20px;
   color: #1a1b22;
   font-family: "Roboto", Arial, sans-serif;
@@ -117,5 +117,6 @@
   .modal-submit__paragraph {
     font-size: 16px;
     margin: 0 0 20px;
+    line-height: 23px;
   }
 }

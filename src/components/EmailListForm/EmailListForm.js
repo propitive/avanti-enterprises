@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
-function EmailListForm() {
+function EmailListForm({ handleEmailListModalOpen }) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -18,6 +18,7 @@ function EmailListForm() {
       .then(
         (result) => {
           console.log(result.text);
+          handleEmailListModalOpen();
         },
         (error) => {
           console.log(error.text);

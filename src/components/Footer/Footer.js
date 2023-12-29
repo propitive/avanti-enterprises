@@ -1,7 +1,7 @@
 import EmailListForm from "../EmailListForm/EmailListForm";
 import { Link } from "react-router-dom";
 
-function Footer() {
+function Footer({ handleEmailListModalOpen }) {
   return (
     <footer className="footer">
       <div className="footer__links">
@@ -25,10 +25,6 @@ function Footer() {
           >
             <p className="footer__column-link">Vinyl Planking</p>
           </Link>
-
-          {/* <p className="footer__column-link">Kitchen Cabinets</p>
-          <p className="footer__column-link">Bathroom Cabinets</p>
-          <p className="footer__column-link">Vinyl Planking</p> */}
         </div>
         <div className="footer__column">
           <h4 className="footer__column-title">Our Company</h4>
@@ -40,7 +36,7 @@ function Footer() {
           </Link>
         </div>
       </div>
-      <EmailListForm />
+      <EmailListForm handleEmailListModalOpen={handleEmailListModalOpen} />
     </footer>
   );
 }

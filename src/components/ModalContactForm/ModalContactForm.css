@@ -4,3 +4,10 @@
   font-size: 20px;
   line-height: 30px;
 }
+
+.modal-email-list__paragraph {
+  font-family: "Inclusive Sans", sans-serif, Arial;
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+}

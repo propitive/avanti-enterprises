@@ -1,6 +1,8 @@
 import { Route, Switch } from "react-router-dom";
 import { useState } from "react";
 
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
 import ContactForm from "../ContactForm/ContactForm";
 import Main from "../Main/Main";
 import ScrollToTop from "../ScrollToTop/ScrollToTop";
@@ -9,9 +11,11 @@ import BathroomCabinets from "../BathroomCabinets/BathroomCabinets";
 import VinylPlanking from "../VinylPlanking/VinylPlanking";
 import About from "../About/About";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
+import ModalEmailList from "../ModalEmailList/ModalEmailList";
 
 function App() {
   const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
+  const [isEmailListModalOpen, setIsEmailListOpen] = useState(true);
 
   const handleOpenModal = () => {
     setIsContactFormModalOpen(true);
@@ -21,9 +25,18 @@ function App() {
     setIsContactFormModalOpen(false);
   };
 
+  const handleEmailListModalOpen = () => {
+    setIsEmailListOpen(true);
+  };
+
+  const handleCloseEmailListModal = () => {
+    setIsEmailListOpen(false);
+  };
+
   return (
     <>
       <ScrollToTop />
+      <Header />
       <Switch>
         <Route path="/services/kitchen-cabinets">
           <KitchenCabinets />
@@ -44,10 +57,17 @@ function App() {
           <Main />
         </Route>
       </Switch>
+      <Footer handleEmailListModalOpen={handleEmailListModalOpen} />
       {isContactFormModalOpen && (
         <ModalContactForm
           handleCloseModal={handleCloseModal}
           isOpen={isContactFormModalOpen}
+        />
+      )}
+      {isEmailListModalOpen && (
+        <ModalEmailList
+          handleCloseModal={handleCloseEmailListModal}
+          isOpen={isEmailListModalOpen}
         />
       )}
     </>

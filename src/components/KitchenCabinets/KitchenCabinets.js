@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
 import kitchenParallax from "../../images/servicesParallax/kitchenCabinetsParallax.jpg";
 import kitchenImage from "../../images/showcaseCards/kitchenCabinetsNew2.jpg";
@@ -14,7 +12,6 @@ import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 function KitchenCabinets() {
   return (
     <>
-      <Header />
       <div className="k-cabinets">
         <Parallax strength={400} bgImage={kitchenParallax}>
           <div className="k-cabinets__parallax"></div>
@@ -59,7 +56,6 @@ function KitchenCabinets() {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

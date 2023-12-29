@@ -3,8 +3,6 @@ import emailjs from "@emailjs/browser";
 import { InputMask } from "primereact/inputmask";
 
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 function ContactForm({ handleOpenModal }) {
   const form = useRef();
@@ -34,7 +32,6 @@ function ContactForm({ handleOpenModal }) {
 
   return (
     <>
-      <Header />
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
         <h2 className="contact-form__header">Contact Us</h2>
         <div className="form__input-box">
@@ -69,25 +66,11 @@ function ContactForm({ handleOpenModal }) {
           />
           <span className="form__input-span">Number</span>
         </div>
-        {/* <Link
-          to="/contact-form"
-          style={{ textDecoration: "none", color: "#f5f0f0" }}
-        > */}
         <BookOnlineButton
           className="contact-form__button"
           buttonText="GET A FREE QUOTE"
         />
-        {/* <button
-          className={"book-online__button " + "contact-form__button"}
-          type="submit"
-        >
-          <span className="book-online__button-shadow"></span>
-          <span className="book-online__button-edge"></span>
-          <span className="book-online__button-text">GET A FREE QUOTE</span>
-        </button> */}
-        {/* </Link> */}
       </form>
-      <Footer />
     </>
   );
 }

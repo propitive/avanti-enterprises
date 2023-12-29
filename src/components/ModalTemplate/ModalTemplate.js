@@ -5,6 +5,7 @@ function ModalTemplate({
   buttonText,
   children,
   handleCloseModal,
+  isButtonPresent,
   isOpen,
   link,
   name,
@@ -34,11 +35,16 @@ function ModalTemplate({
       <form className="modal__form" name={name}>
         <h2 className="modal__title">{title}</h2>
         {children}
-        <Link to={link || "/"} style={{ textDecoration: "none" }}>
-          <button className="modal__button" onClick={() => handleCloseModal()}>
-            <p className="modal__button-text">{buttonText || "Submit"}</p>
-          </button>
-        </Link>
+        {isButtonPresent && (
+          <Link to={link || "/"} style={{ textDecoration: "none" }}>
+            <button
+              className="modal__button"
+              onClick={() => handleCloseModal()}
+            >
+              <p className="modal__button-text">{buttonText || "Submit"}</p>
+            </button>
+          </Link>
+        )}
         <button
           className="modal__button-close"
           type="button"

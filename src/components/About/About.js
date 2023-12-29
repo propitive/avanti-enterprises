@@ -1,13 +1,8 @@
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import facebook from "../../images/icons/iconLeftArrow.png";
-import waveBackground from "../../images/about/waveBackground.svg";
 import { aboutInfoCards } from "../../utils/constants";
 
 function About() {
   return (
     <>
-      <Header />
       <div className="about">
         <div className="about__header">
           <p className="about__header__subtitle">
@@ -50,14 +45,17 @@ function About() {
           {aboutInfoCards.map((info) => {
             return (
               <div className="about__what-card">
-                <img className="about__what-card__icon" src={info.icon} />
+                <img
+                  className="about__what-card__icon"
+                  src={info.icon}
+                  alt={`Icon of ${info.icon}`}
+                />
                 <p className="about__what-card__paragraph">{info.paragraph}</p>
               </div>
             );
           })}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

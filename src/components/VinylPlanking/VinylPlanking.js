@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import { Parallax } from "react-parallax";
 import vinylParallax from "../../images/servicesParallax/vinylPlankingParallax.jpg";
 import vinylImage from "../../images/showcaseCards/vinylPlankingImage.jpg";
@@ -11,7 +9,6 @@ import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 function VinylPlanking() {
   return (
     <>
-      <Header />
       <div className="k-cabinets">
         <Parallax strength={400} bgImage={vinylParallax}>
           <div className="k-cabinets__parallax"></div>
@@ -50,7 +47,6 @@ function VinylPlanking() {
           />
         </div>
       </div>
-      <Footer />
     </>
   );
 }
