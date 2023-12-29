@@ -15,7 +15,7 @@ import ModalEmailList from "../ModalEmailList/ModalEmailList";
 
 function App() {
   const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
-  const [isEmailListModalOpen, setIsEmailListOpen] = useState(true);
+  const [isEmailListModalOpen, setIsEmailListOpen] = useState(false);
 
   const handleOpenModal = () => {
     setIsContactFormModalOpen(true);
