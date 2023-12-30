@@ -6,7 +6,7 @@ import { vinylPlankingData } from "../../utils/constants";
 import ProductLayout from "../ProductLayout/ProductLayout";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
-function VinylPlanking() {
+function VinylPlanking({ onCardClick }) {
   return (
     <>
       <div className="k-cabinets">
@@ -43,6 +43,7 @@ function VinylPlanking() {
         <div className="k-cabinets__color-section">
           <ProductLayout
             header="Available Vinyl Planking"
+            onCardClick={onCardClick}
             productArray={vinylPlankingData}
           />
         </div>

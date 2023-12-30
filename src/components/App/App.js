@@ -12,10 +12,13 @@ import VinylPlanking from "../VinylPlanking/VinylPlanking";
 import About from "../About/About";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
 import ModalEmailList from "../ModalEmailList/ModalEmailList";
+import ItemModal from "../ItemModal/ItemModal";
 
 function App() {
   const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
   const [isEmailListModalOpen, setIsEmailListOpen] = useState(false);
+  const [isItemModalOpen, setIsItemModalOpen] = useState(false);
+  const [selectedCard, setSelectedCard] = useState({});
 
   const handleOpenModal = () => {
     setIsContactFormModalOpen(true);
@@ -33,19 +36,28 @@ function App() {
     setIsEmailListOpen(false);
   };
 
+  const handleCLoseItemModal = () => {
+    setIsItemModalOpen(false);
+  };
+
+  const onCardClick = (card) => {
+    setIsItemModalOpen(true);
+    setSelectedCard(card);
+  };
+
   return (
     <>
       <ScrollToTop />
       <Header />
       <Switch>
         <Route path="/services/kitchen-cabinets">
-          <KitchenCabinets />
+          <KitchenCabinets onCardClick={onCardClick} />
         </Route>
         <Route path="/services/bathroom-cabinets">
-          <BathroomCabinets />
+          <BathroomCabinets onCardClick={onCardClick} />
         </Route>
         <Route path="/services/vinyl-planking">
-          <VinylPlanking />
+          <VinylPlanking onCardClick={onCardClick} />
         </Route>
         <Route path="/contact-form">
           <ContactForm handleOpenModal={handleOpenModal} />
@@ -69,6 +81,9 @@ function App() {
           handleCloseModal={handleCloseEmailListModal}
           isOpen={isEmailListModalOpen}
         />
+      )}
+      {isItemModalOpen && (
+        <ItemModal card={selectedCard} onClose={handleCLoseItemModal} />
       )}
     </>
   );

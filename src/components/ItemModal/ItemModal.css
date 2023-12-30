@@ -1,0 +1,169 @@
+.item-modal__preview {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 10px;
+  font-family: "Rubik", sans-serif, Arial;
+  z-index: 3;
+}
+
+.item-modal__description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 10px;
+  justify-content: space-between;
+}
+
+.item-modal__container {
+  background: #ffffff;
+  border-radius: 16px;
+  border-top-right-radius: 10px;
+
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.item-modal__preview-image {
+  display: flex;
+  object-fit: cover;
+  max-width: 400px;
+  max-height: 500px;
+  margin: 0 auto 0;
+}
+
+.item-modal__close-button {
+  background: url(../../images/close-button.svg) center no-repeat;
+  height: 16px;
+  width: 16px;
+  /* height: 36px;
+  width: 36px; */
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor: pointer;
+  z-index: 99;
+  padding: 0;
+}
+
+.item-modal__title {
+  font-family: "Rubik", sans-serif, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0 auto 0;
+}
+
+.item-modal__weather {
+  font-family: "Rubik", sans-serif, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+}
+
+.item-modal__delete {
+  font-family: "Rubik", sans-serif, Arial;
+  color: rgba(255, 77, 0, 1);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.item-modal__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px;
+  flex-direction: column;
+}
+
+.item-modal__delete-buton {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+}
+
+.item-modal__delete-buton,
+.item-modal__delete-buton span {
+  transition: 200ms;
+}
+
+.item-modal__delete-buton .item-modal__delete-text {
+  transform: translateX(10px);
+  color: white;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif, Arial;
+  font-size: 18px;
+}
+
+.item-modal__delete-buton .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(90px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-modal__delete-buton svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.item-modal__delete-buton:hover {
+  background: #ff3636;
+}
+
+.item-modal__delete-buton:hover .item-modal__delete-text {
+  color: transparent;
+}
+
+.item-modal__delete-buton:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(-20px);
+}
+
+.item-modal__delete-buton:focus {
+  outline: none;
+}
+
+.item-modal__delete-buton:active .icon svg {
+  transform: scale(0.8);
+}
+
+@media screen and (max-width: 542px) {
+  .item-modal__close-button {
+    top: -20px;
+    right: -20px;
+  }
+  .item-modal__preview-image {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .item-modal__preview-image {
+    max-width: 300px;
+  }
+}

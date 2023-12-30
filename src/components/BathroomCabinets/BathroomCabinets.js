@@ -9,7 +9,7 @@ import {
 import ProductLayout from "../ProductLayout/ProductLayout";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
-function BathroomCabinets() {
+function BathroomCabinets({ onCardClick }) {
   return (
     <>
       <div className="k-cabinets">
@@ -47,12 +47,14 @@ function BathroomCabinets() {
         <div className="k-cabinets__color-section">
           <ProductLayout
             header="Available Traditional"
+            onCardClick={onCardClick}
             productArray={kitchenCabinetsTraditional}
           />
         </div>
         <div className="k-cabinets__color-section">
           <ProductLayout
             header="Available Shakers"
+            onCardClick={onCardClick}
             productArray={kitchenCabinetsShaker}
           />
         </div>
