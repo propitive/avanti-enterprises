@@ -1,6 +1,6 @@
 # Paradize Pizzas
 
-This is a Single Page Application created with React that serves as the website for the best Oven Baked Pizza business in North Texas!
+This is a Single Page Application created with React that serves as the website for the best Cabinet and Vinyl Planking business in North Texas!
 ![ScreenshotOfSearchResultsHome](/src/images/homescreen.png)
 
 ### Domain
