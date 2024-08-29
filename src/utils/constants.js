@@ -69,6 +69,24 @@ export const imageSliderPhotos = [
   { id: 4, src: kitchenOne, alt: "Old White cabinets" },
 ];
 
+export const imageSliderReviews = [
+  {
+    id: 1,
+    author: "Joseph Torres",
+    quote: `"We couldn't be happier with our newly renovated kitchen! The team was professional, punctual, and truly listened to our needs, ensuring every detail was perfect. They transformed our outdated space into a modern, functional kitchen that we now love to spend time in. The quality of the workmanship exceeded our expectations, and we’ve already recommended them to friends and family!"`,
+  },
+  {
+    id: 2,
+    author: "Victoria Maldonado",
+    quote: `"Our bathroom renovation was an absolute success thanks to this fantastic team. From the initial consultation to the final touches, they demonstrated expertise and a genuine commitment to making our vision a reality. They tailored every aspect of the design to suit our preferences and lifestyle, and the results are simply stunning. The project was completed on time and within budget, making the whole experience stress-free and enjoyable."`,
+  },
+  {
+    id: 3,
+    author: "Jose Maldonado",
+    quote: `"We are thrilled with the beautiful cabinets installed in our new kitchen and bathrooms. The craftsmanship is top-notch, and the team was incredibly attentive to our needs throughout the process. They offered creative solutions that we hadn’t even thought of, and the final product is both functional and stylish. Our home feels completely transformed, and we couldn’t be more satisfied with the outcome!"`,
+  },
+];
+
 export const showcaseCards = [
   {
     id: 1,

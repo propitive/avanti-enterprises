@@ -1,0 +1,37 @@
+.main-process {
+  display: flex;
+  flex-direction: row;
+  background: #00294b;
+  height: 575px;
+}
+
+.main-process__textbox-container {
+  margin: 100px auto auto 100px;
+  color: #f1f2f3;
+}
+
+.main-process__textbox {
+}
+
+.main-process__textbox-title {
+  margin: 0;
+  font-size: 40px;
+  font-family: "lora", sans-serif, Arial;
+  font-weight: 100;
+}
+
+.main-process__textbox-paragraph {
+  font-family: "Figtree", sans-serif;
+  margin: 30px 40px 100px 0;
+  line-height: 30px;
+  font-size: 18px;
+  letter-spacing: 0.25px;
+  font-weight: 100;
+}
+
+.main-process__button {
+}
+
+.main-process__image {
+  width: 45%;
+}

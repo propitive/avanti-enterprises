@@ -1,0 +1,33 @@
+.main-title {
+  width: 100%;
+  padding: 0 40px 0;
+}
+
+.main-title__text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 40px auto 60px;
+  gap: 15px;
+}
+
+.main-title__title {
+  /* font-family: "Radio Canada Big", sans-serif, Arial; */
+  font-family: "lora", sans-serif, Arial;
+  /* font-weight: 700; */
+  /* font-style: normal; */
+  font-size: 60px;
+  /* color: #00294b; */
+  margin: 0;
+}
+
+.main-title__title-bold {
+  color: hsl(345deg 100% 47%);
+}
+
+.main-title__subtitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 35px;
+}
