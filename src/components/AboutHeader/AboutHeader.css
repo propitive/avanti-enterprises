@@ -1,0 +1,140 @@
+.about-header {
+  margin: 0;
+}
+
+.about-header__parallax img {
+  height: 550px;
+}
+
+.about-header__parallax-div {
+  height: 500px;
+  width: 100%;
+}
+
+.about-header__image {
+  background-image: url("../../images/showcaseCards/bathroomCabinetsNew.png");
+  position: relative;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-header__image-title {
+  font-family: "lora" !important;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 150px;
+  left: 100px;
+  margin: 0;
+  color: #f1f2f3;
+}
+
+.about-header__text-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+  width: calc(100% - 80px);
+  margin: auto;
+  padding: 70px 0 90px;
+}
+
+.about-header__header {
+  font-family: "Lora", serif;
+  font-size: 45px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  max-width: 1200px;
+  margin: 0 0 80px;
+}
+
+.about-header__paragraph {
+  font-family: "Nunito", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  max-width: 1200px;
+  margin: 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .about-header__parallax-div {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .about-header__parallax-div {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about-header__parallax-div {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-header__parallax-div {
+    height: 300px;
+  }
+  .about-header__text-container {
+    width: calc(100% - 40px);
+    padding: 50px 0 70px;
+  }
+  .about-header__header {
+    margin: 0 0 60px;
+    font-size: 40px;
+  }
+  .about-header__paragraph {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-header__text-container {
+    padding: 40px 0 60px;
+  }
+  .about-header__header {
+    font-size: 35px;
+    margin: 0 0 30px;
+  }
+  .about-header__paragraph {
+  }
+}
+
+@media screen and (max-width: 715px) {
+  .about-header__text-container {
+  }
+  .about-header__header {
+    font-size: 30px;
+  }
+  .about-header__paragraph {
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-header__text-container {
+  }
+  .about-header__header {
+    font-size: 27px;
+    margin: 0 0 20px;
+  }
+  .about-header__paragraph {
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .about-header__text-container {
+  }
+  .about-header__header {
+    font-size: 23px;
+  }
+  .about-header__paragraph {
+  }
+}

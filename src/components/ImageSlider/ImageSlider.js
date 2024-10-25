@@ -5,9 +5,8 @@ import { Navigation, EffectFade } from "swiper";
 import "swiper/scss/navigation";
 import "swiper/scss/effect-fade";
 import styles from "./ImageSlider.module.scss";
-import { imageSliderPhotos } from "../../utils/constants";
 
-function ImageSlider() {
+function ImageSlider({ photos }) {
   const swiperNavPrevRef = useRef(null);
   const swiperNavNextRef = useRef(null);
 
@@ -32,7 +31,7 @@ function ImageSlider() {
           swiper.navigation.update();
         }}
       >
-        {imageSliderPhotos.map((photo) => {
+        {photos.map((photo) => {
           return (
             <SwiperSlide className={styles.swiperslide} key={photo.id}>
               <img src={photo.src} alt={photo.alt} />

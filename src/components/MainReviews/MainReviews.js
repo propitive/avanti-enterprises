@@ -1,70 +1,53 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState } from "react";
 
-import { imageSliderReviews } from "../../utils/constants";
+import forwardArrow from "../../images/icons/arrowCarrotRight.svg";
+import backArrow from "../../images/icons/arrowCarrotLeft.svg";
+import quotationMarks from "../../images/main/quotationMarks.png";
 
-function MainReviews() {
+function MainReviews({ reviews }) {
   const [isReview, setIsReview] = useState(1);
 
   const handleStepBackward = () => {
-    if (isReview === 1) return setIsReview(3);
-    return setIsReview(isReview - 1);
+    setIsReview(isReview === 1 ? 3 : isReview - 1);
   };
 
   const handleStepForward = () => {
-    if (isReview === 3) return setIsReview(1);
-    return setIsReview(isReview + 1);
+    setIsReview(isReview === 3 ? 1 : isReview + 1);
   };
 
   return (
     <section className="main-reviews">
       <div className="main-reviews__container">
-        <button
+        <img
           className="main-reviews__back-button"
-          type="button"
+          src={backArrow}
+          alt="Back arrow to see high-rating reviews for home remodel."
           onClick={handleStepBackward}
         />
-        {isReview === 1 ? (
-          <div
-            className="main-reviews__review"
-            id={imageSliderReviews.at(0).id}
-          >
-            <p className="main-reviews__quote">
-              {imageSliderReviews.at(0).quote}
-            </p>
-            <p className="main-reviews__author">
-              {imageSliderReviews.at(0).author}
-            </p>
-          </div>
-        ) : undefined}
-        {isReview === 2 ? (
-          <div
-            className="main-reviews__review"
-            id={imageSliderReviews.at(1).id}
-          >
-            <p className="main-reviews__quote">
-              {imageSliderReviews.at(1).quote}
-            </p>
-            <p className="main-reviews__author">
-              {imageSliderReviews.at(1).author}
-            </p>
-          </div>
-        ) : undefined}
-        {isReview === 3 ? (
-          <div
-            className="main-reviews__review"
-            id={imageSliderReviews.at(2).id}
-          >
-            <p className="main-reviews__quote">
-              {imageSliderReviews.at(2).quote}
-            </p>
-            <p className="main-reviews__author">
-              {imageSliderReviews.at(2).author}
-            </p>
-          </div>
-        ) : undefined}
-        <button
+
+        <div className={`main-reviews__review`}>
+          {reviews.map((review, index) => (
+            <div
+              className={`main-reviews__transition-container ${
+                isReview === index + 1 ? "visible" : "hidden"
+              }`}
+              key={review.id}
+              id={review.id}
+            >
+              <img
+                className="main-reviews__image"
+                src={quotationMarks}
+                alt="Quotation marks for high-rating reviews for home remodel."
+              />
+              <p className="main-reviews__quote">{review.quote}</p>
+              <p className="main-reviews__author">{review.author}</p>
+            </div>
+          ))}
+        </div>
+        <img
           className="main-reviews__forward-button"
-          type="button"
+          src={forwardArrow}
+          alt="Forward arrow to see high-rating reviews for home remodel."
           onClick={handleStepForward}
         />
       </div>

@@ -8,19 +8,31 @@ import {
 } from "../../utils/constants";
 import ProductLayout from "../ProductLayout/ProductLayout";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
+import { Helmet } from "react-helmet-async";
 
-function BathroomCabinets({ onCardClick }) {
+function BathroomCabinets({ handleOpenModal, onCardClick }) {
   return (
     <>
+      <Helmet>
+        <title>
+          Custom Bathroom Cabinets in Dallas Fort Worth | Avanti Enterprises
+        </title>
+        <meta
+          name="description"
+          content="Upgrade your bathroom with custom vanities, wall-mounted storage, and single or double sinks. Avanti Enterprises offers tailored solutions for every space in DFW."
+        />
+        <link rel="canonical" href="/services/bathroom-cabinets" />
+      </Helmet>
+
       <div className="k-cabinets">
         <Parallax strength={400} bgImage={bathroomParallax}>
           <div className="k-cabinets__parallax"></div>
         </Parallax>
         <div className="k-cabinets__first-section">
           <div className="k-cabinets__first-section__description">
-            <h3 className="k-cabinets__first-section__header">
+            <h1 className="k-cabinets__first-section__header">
               Bathroom Cabinets
-            </h3>
+            </h1>
             <p className="k-cabinets__first-section__paragraph">
               Our bathroom transformations go beyond expectations — our work is
               where quality meets sophistication, and your satisfaction is our
@@ -28,20 +40,18 @@ function BathroomCabinets({ onCardClick }) {
               make your daily routine a testament to Avanti Enterprise's
               quality.
             </p>
-            <Link
-              to="/contact-form"
-              style={{ textDecoration: "none", color: "#f5f0f0" }}
-            >
-              <BookOnlineButton
-                className="k-cabinets__first-section__button"
-                buttonText="GET A FREE QUOTE"
-              />
-            </Link>
+            <BookOnlineButton
+              className="k-cabinets__first-section__button"
+              buttonText="GET A FREE QUOTE"
+              handleOpenModal={handleOpenModal}
+              toggleSidebar={() => null}
+            />
+            {/* </Link> */}
           </div>
           <img
             className="k-cabinets__first-section__image"
             src={bathroomImage}
-            alt="Kitchen cabinets"
+            alt="Custom white bathroom cabinets installed in a Dallas Fort Worth home"
           />
         </div>
         <div className="k-cabinets__color-section">

@@ -13,77 +13,105 @@ import About from "../About/About";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
 import ModalEmailList from "../ModalEmailList/ModalEmailList";
 import ItemModal from "../ItemModal/ItemModal";
+import GeneralBlog from "../Blog/GeneralBlog/GeneralBlog";
+import ModalGetAQuote from "../ModalGetAQuote/ModalGetAQuote";
+import GeneralGallery from "../Gallery/GeneralGallery";
+import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
+import Project1 from "../Gallery/Galleries/Projects/Project1";
 
 function App() {
-  const [isContactFormModalOpen, setIsContactFormModalOpen] = useState(false);
-  const [isEmailListModalOpen, setIsEmailListOpen] = useState(false);
-  const [isItemModalOpen, setIsItemModalOpen] = useState(false);
+  const [modals, setModals] = useState({
+    contactForm: false,
+    emailList: false,
+    getAQuote: false,
+    item: false,
+  });
   const [selectedCard, setSelectedCard] = useState({});
 
-  const handleOpenModal = () => {
-    setIsContactFormModalOpen(true);
-  };
-
-  const handleCloseModal = () => {
-    setIsContactFormModalOpen(false);
-  };
-
-  const handleEmailListModalOpen = () => {
-    setIsEmailListOpen(true);
-  };
-
-  const handleCloseEmailListModal = () => {
-    setIsEmailListOpen(false);
-  };
-
-  const handleCLoseItemModal = () => {
-    setIsItemModalOpen(false);
+  const toggleModal = (modalType, isOpen) => {
+    setModals((prevState) => ({ ...prevState, [modalType]: isOpen }));
   };
 
   const onCardClick = (card) => {
-    setIsItemModalOpen(true);
     setSelectedCard(card);
+    toggleModal("item", true);
   };
 
   return (
     <>
       <ScrollToTop />
-      <Header />
+      <Header handleOpenModal={() => toggleModal("getAQuote", true)} />
       <Switch>
         <Route path="/services/kitchen-cabinets">
-          <KitchenCabinets onCardClick={onCardClick} />
+          <KitchenCabinets
+            handleOpenModal={() => toggleModal("getAQuote", true)}
+            onCardClick={onCardClick}
+          />
         </Route>
         <Route path="/services/bathroom-cabinets">
-          <BathroomCabinets onCardClick={onCardClick} />
+          <BathroomCabinets
+            handleOpenModal={() => toggleModal("getAQuote", true)}
+            onCardClick={onCardClick}
+          />
         </Route>
         <Route path="/services/vinyl-planking">
-          <VinylPlanking onCardClick={onCardClick} />
+          <VinylPlanking
+            handleOpenModal={() => toggleModal("getAQuote", true)}
+            onCardClick={onCardClick}
+          />
         </Route>
-        <Route path="/contact-form">
-          <ContactForm handleOpenModal={handleOpenModal} />
+        <Route
+          exact
+          path="/blog/unlock-the-secrets-to-a-clutter-free-kitchen-organize-your-cabinets-like-a-pro"
+        >
+          <UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro
+            handleOpenModal={() => toggleModal("emailList", true)}
+          />
+        </Route>
+        <Route path="/blog">
+          <GeneralBlog />
         </Route>
         <Route path="/about-us">
           <About />
         </Route>
+        <Route path="/gallery/project1">
+          <Project1 handleOpenModal={() => toggleModal("getAQuote", true)} />
+        </Route>
+        <Route path="/gallery">
+          <GeneralGallery />
+        </Route>
         <Route path="/">
-          <Main />
+          <Main handleOpenModal={() => toggleModal("getAQuote", true)} />
         </Route>
       </Switch>
-      <Footer handleEmailListModalOpen={handleEmailListModalOpen} />
-      {isContactFormModalOpen && (
+      <Footer handleEmailListModalOpen={() => toggleModal("emailList", true)} />
+      {modals.contactForm && (
         <ModalContactForm
-          handleCloseModal={handleCloseModal}
-          isOpen={isContactFormModalOpen}
+          handleCloseModal={() => toggleModal("contactForm", false)}
+          isOpen={modals.contactForm}
         />
       )}
-      {isEmailListModalOpen && (
+      {modals.emailList && (
         <ModalEmailList
-          handleCloseModal={handleCloseEmailListModal}
-          isOpen={isEmailListModalOpen}
+          handleCloseModal={() => toggleModal("emailList", false)}
+          isOpen={modals.emailList}
         />
       )}
-      {isItemModalOpen && (
-        <ItemModal card={selectedCard} onClose={handleCLoseItemModal} />
+      {modals.getAQuote && (
+        <>
+          {console.log("Modal get a quote is open!")}
+          <ModalGetAQuote
+            handleCloseModal={() => toggleModal("getAQuote", false)}
+            handleOpenSubmit={() => toggleModal("contactForm", true)}
+            isOpen={modals.getAQuote}
+          />
+        </>
+      )}
+      {modals.item && (
+        <ItemModal
+          card={selectedCard}
+          onClose={() => toggleModal("item", false)}
+        />
       )}
     </>
   );

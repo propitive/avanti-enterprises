@@ -2,7 +2,12 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
-function EmailListForm({ handleEmailListModalOpen }) {
+function EmailListForm({
+  className,
+  classNameHeader,
+  classNameForm,
+  handleEmailListModalOpen,
+}) {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -28,19 +33,27 @@ function EmailListForm({ handleEmailListModalOpen }) {
   };
 
   return (
-    <div className="email-list">
-      <h3 className="email-list__header">JOIN OUR MAILING LIST</h3>
-      <form className="email-list__form" ref={form} onSubmit={sendEmail}>
+    <div className={"email-list " + className}>
+      <h3 className={"email-list__header " + classNameHeader}>
+        JOIN OUR MAILING LIST
+      </h3>
+      <form
+        className={"email-list__form " + classNameForm}
+        ref={form}
+        onSubmit={sendEmail}
+      >
         <input
           className="email-list__input"
           name="user-email"
           type="text"
-          placeholder="Email Address"
+          placeholder="What's your email?"
           required
         />
         <BookOnlineButton
           buttonText="SUBSCRIBE"
           className="email-list__button"
+          handleOpenModal={() => null}
+          toggleSidebar={() => null}
         />
       </form>
     </div>

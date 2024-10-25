@@ -28,7 +28,6 @@
   border-top-right-radius: 10px;
 
   position: relative;
-  /* overflow: hidden; */
 }
 
 .item-modal__preview-image {
@@ -43,8 +42,6 @@
   background: url(../../images/close-button.svg) center no-repeat;
   height: 16px;
   width: 16px;
-  /* height: 36px;
-  width: 36px; */
   cursor: pointer;
   border: none;
   position: absolute;
@@ -56,8 +53,8 @@
 }
 
 .item-modal__title {
-  font-family: "Rubik", sans-serif, Arial;
-  font-weight: 700;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
   font-size: 20px;
   margin: 0 auto 0;
 }
@@ -150,6 +147,12 @@
 
 .item-modal__delete-buton:active .icon svg {
   transform: scale(0.8);
+}
+
+@media screen and (max-height: 600px) {
+  .item-modal__preview-image {
+    max-height: 400px;
+  }
 }
 
 @media screen and (max-width: 542px) {

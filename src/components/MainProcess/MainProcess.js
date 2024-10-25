@@ -1,4 +1,4 @@
-import processImage from "../../images/main/ourProcess.jpg";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 import BookOnlineButton from "../BookOnlineButton/BookOnlineButton";
 
@@ -14,17 +14,17 @@ function MainProcess() {
             installation. You can trust that your vision will be expertly
             crafted into a stunning, functional space tailored to your needs.
           </p>
-          <BookOnlineButton
-            className="main-process__button"
-            buttonText="LEARN MORE"
-          />
+          <Link to="/about-us">
+            <BookOnlineButton
+              className="main-process__button"
+              buttonText="LEARN MORE"
+              handleOpenModal={() => null}
+              toggleSidebar={() => null}
+            />
+          </Link>
         </div>
       </div>
-      <img
-        className="main-process__image"
-        src={processImage}
-        alt="Picture of a beautifully renovated kitchen that looks modern and revolves around the brown color palette."
-      />
+      <div className="main-process__image"></div>
     </section>
   );
 }

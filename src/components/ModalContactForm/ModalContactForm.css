@@ -1,13 +1,63 @@
-.modal-submit__paragraph {
+/* .modal-submit__paragraph {
   font-family: "Inclusive Sans", sans-serif, Arial;
   margin: 0 0 40px;
   font-size: 20px;
   line-height: 30px;
 }
 
-.modal-email-list__paragraph {
+.modal__submit__paragraph {
   font-family: "Inclusive Sans", sans-serif, Arial;
   margin: 0;
   font-size: 20px;
   line-height: 24px;
+} */
+
+/* .modal-submit__paragraph {
+  font-family: "Inclusive Sans", sans-serif, Arial;
+  margin: 0 0 40px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .modal-submit__paragraph {
+    letter-spacing: 0.4px;
+    line-height: 25px;
+    font-size: 17px;
+  }
+} */
+
+.modal-submit__paragraph {
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  max-width: 700px;
+  margin: 10px 0 40px;
+}
+
+@media screen and (max-width: 925px) {
+  .modal-submit__paragraph {
+    margin: 10px 0 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .modal-submit__paragraph {
+    max-width: 430px;
+    font-size: 18px;
+    margin: 10px 0 20px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .modal-submit__paragraph {
+    max-width: 300px;
+    /* margin: 10px 0 10px; */
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal-submit__paragraph {
+    max-width: 290px;
+    font-size: 16px;
+  }
 }

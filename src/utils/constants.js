@@ -1,15 +1,18 @@
+import { useEffect } from "react";
+
 //// IMAGE SLIDER PHOTOS ////
-import kitchenOne from "../images/imageSlider/kitchenOneJPG.jpg";
+import kitchenOne from "../images/imageSlider/kitchenOneJPG.jpeg";
 import kitchenTwo from "../images/imageSlider/kitchenTwoJPG.jpg";
-import kitchenThree from "../images/imageSlider/kitchenThreePNG.png";
+import kitchenThree from "../images/imageSlider/kitchenThreePNG.jpg";
 import kitchenFour from "../images/imageSlider/kitchenFourJPG.jpg";
 
 //// SHOWCASE CARDS ////
-import bathroomCabinets from "../images/showcaseCards/bathroomCabinets.jpg";
 import bathroomCabinetsNew from "../images/showcaseCards/bathroomCabinetsNew.png";
-import kitchenCabinets from "../images/showcaseCards/kitchenCabinets.jpg";
+import bathroomCabinetsNewCard from "../images/showcaseCards/bathroomCabinetsNewCard.png";
 import kitchenCabinetsNew from "../images/showcaseCards/kitchenCabinetsNew.jpg";
+import kitchenCabinetsNewCard from "../images/showcaseCards/kitchenCabinetsNewCard.jpg";
 import vinylPlanking from "../images/showcaseCards/vinylPlanking.jpg";
+import vinylPlankingCard from "../images/showcaseCards/vinylPlankingCard.jpg";
 
 //// PRODUCTS KITCHEN CABINETS ////
 
@@ -62,36 +65,78 @@ import aboutMagnifier from "../images/icons/about/aboutMagnifier.png";
 import aboutMedal from "../images/icons/about/aboutBusinessman.png";
 import aboutPiggyBank from "../images/icons/about/aboutEye.png";
 
+//// ABOUT PROCESS ////
+
+import processConstruction from "../images/about/processConstruction.jpg";
+import processConsultation from "../images/about/processConsultation.jpg";
+import processDesign from "../images/about/processDesign.jpg";
+import processScope from "../images/about/processScope.jpg";
+
+export const dropdownSidebarContentMenu = {
+  id: 1,
+  title: "Services",
+  content: [
+    {
+      link: "/services/kitchen-cabinets",
+      title: "Kitchen Cabinets",
+    },
+    {
+      link: "/services/bathroom-cabinets",
+      title: "Bathroom Cabinets",
+    },
+    {
+      link: "/services/vinyl-planking",
+      title: "Vinyl Planking",
+    },
+  ],
+};
+
 export const imageSliderPhotos = [
-  { id: 1, src: kitchenTwo, alt: "Brown cabinets" },
-  { id: 2, src: kitchenThree, alt: "Modern Brown cabinets" },
-  { id: 3, src: kitchenFour, alt: "White cabinets" },
-  { id: 4, src: kitchenOne, alt: "Old White cabinets" },
+  {
+    id: 1,
+    src: kitchenTwo,
+    alt: "Custom white kitchen cabinets installed in a Dallas Fort Worth home.",
+  },
+  {
+    id: 2,
+    src: kitchenThree,
+    alt: "Custom brown kitchen cabinets installed in a Dallas Fort Worth home.",
+  },
+  {
+    id: 3,
+    src: kitchenOne,
+    alt: "Custom blue kitchen cabinets installed in a Dallas Fort Worth home.",
+  },
+  {
+    id: 4,
+    src: kitchenFour,
+    alt: "Custom gray bathroom cabinets installed in a Dallas Fort Worth home.",
+  },
 ];
 
 export const imageSliderReviews = [
   {
     id: 1,
-    author: "Joseph Torres",
-    quote: `"We couldn't be happier with our newly renovated kitchen! The team was professional, punctual, and truly listened to our needs, ensuring every detail was perfect. They transformed our outdated space into a modern, functional kitchen that we now love to spend time in. The quality of the workmanship exceeded our expectations, and we’ve already recommended them to friends and family!"`,
+    author: "Michael Torres",
+    quote: `We couldn't be happier with our newly renovated kitchen! The team was professional, punctual, and truly listened to our needs, ensuring every detail was perfect. They transformed our outdated space into a modern, functional kitchen that we now love to spend time in.`,
   },
   {
     id: 2,
-    author: "Victoria Maldonado",
-    quote: `"Our bathroom renovation was an absolute success thanks to this fantastic team. From the initial consultation to the final touches, they demonstrated expertise and a genuine commitment to making our vision a reality. They tailored every aspect of the design to suit our preferences and lifestyle, and the results are simply stunning. The project was completed on time and within budget, making the whole experience stress-free and enjoyable."`,
+    author: "Erick Rodriguez",
+    quote: `Our bathroom renovation was an absolute success thanks to this fantastic team. From the initial consultation to the final touches, they demonstrated expertise and a genuine commitment to making our vision a reality. They tailored every aspect of the design to suit our preferences and lifestyle, and the results are simply stunning.`,
   },
   {
     id: 3,
-    author: "Jose Maldonado",
-    quote: `"We are thrilled with the beautiful cabinets installed in our new kitchen and bathrooms. The craftsmanship is top-notch, and the team was incredibly attentive to our needs throughout the process. They offered creative solutions that we hadn’t even thought of, and the final product is both functional and stylish. Our home feels completely transformed, and we couldn’t be more satisfied with the outcome!"`,
+    author: "Alma Martinez",
+    quote: `We are thrilled with the beautiful cabinets installed in our new kitchen and bathrooms. The craftsmanship is top-notch, and the team was incredibly attentive to our needs throughout the process. They offered creative solutions that we hadn’t even thought of, and the final product is both functional and stylish.`,
   },
 ];
 
 export const showcaseCards = [
   {
     id: 1,
-    src: bathroomCabinetsNew,
-    alt: "Bathroom cabinets",
+    src: bathroomCabinetsNewCard,
+    alt: "Custom white bathroom cabinets installed in a Dallas Fort Worth home",
     title: "Bathroom Cabinets",
     paragraph:
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
@@ -99,8 +144,8 @@ export const showcaseCards = [
   },
   {
     id: 2,
-    src: kitchenCabinetsNew,
-    alt: "Kitchen cabinets",
+    src: kitchenCabinetsNewCard,
+    alt: "Custom white kitchen cabinets installed in a Dallas Fort Worth home",
     title: "Kitchen Cabinets",
     paragraph:
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
@@ -108,12 +153,43 @@ export const showcaseCards = [
   },
   {
     id: 3,
-    src: vinylPlanking,
-    alt: "Vinyl Planking",
+    src: vinylPlankingCard,
+    alt: "Custom vinyl planking installed in a Dallas Fort Worth home",
     title: "Vinyl Planking",
     paragraph:
       "Lorem ipsum dolor sit amet. 33 laudantium quia non odit alias ex natus sint et minima ipsam sit possimus vero rem minima omnis. Eum animi explicabo aut praesentium aliquam ab dolorem!",
     link: "/services/vinyl-planking",
+  },
+];
+
+export const aboutProcess = [
+  {
+    id: 1,
+    image: processConsultation,
+    title: "Consultation",
+    paragraph:
+      "Upon contacting us we schedule an onsite consultation where we listen to your objectives and goals for the remodel. It’s here we will discuss the possibilities within the project(s) while attaining a better understanding of the your timeline, budget and any addition parameters and specific needs in order to provide an accurate proposal.",
+  },
+  {
+    id: 2,
+    image: processScope,
+    title: "Scope of Work & Detailed Estimate",
+    paragraph:
+      "After the initial consultation we deliver and review a scope of work to you, along with a detailed, honest estimate. Each phase of the project will be broken down to provide a transparent understanding of our services and our timeline.",
+  },
+  {
+    id: 3,
+    image: processDesign,
+    title: "Design & Selections",
+    paragraph:
+      "We offer professional design services that can not only create a space with tailored choices but make your build-out a seamless experience. Once under contract, the design and finish selections of the project begins. After sitting with you to learn the desired look and feel for the project, we carefully present design options that meet your needs and improve the day-to-day lives of our clients.",
+  },
+  {
+    id: 4,
+    image: processConstruction,
+    title: "Construction",
+    paragraph:
+      "From the moment the dumpster pulls onto the site, we treat your home like ours. From floor coverings and isolating the construction zone, we clean and organize daily. Regular updates will keep you informed of progress and ensure you are satisfied every step of the way.",
   },
 ];
 
@@ -319,29 +395,45 @@ export const menuNavItems = [
     path: "/services/kitchen-cabinets",
     className: "nav-item",
   },
+  {
+    id: 3,
+    title: "Vinyl Planking",
+    path: "/services/vinyl-planking",
+    className: "nav-item",
+  },
 ];
 
 export const SidebarData = [
-  {
-    title: "Bathroom Cabinets",
-    path: "/services/bathroom-cabinets",
-    cName: "nav-text",
-  },
-  {
-    title: "Kitchen Cabinets",
-    path: "/services/kitchen-cabinets",
-    cName: "nav-text",
-  },
-  {
-    title: "Vinyl Planking",
-    path: "/services/vinyl-planking",
-    cName: "nav-text",
-  },
+  // {
+  //   title: "Bathroom Cabinets",
+  //   path: "/services/bathroom-cabinets",
+  //   cName: "nav-text",
+  // },
+  // {
+  //   title: "Kitchen Cabinets",
+  //   path: "/services/kitchen-cabinets",
+  //   cName: "nav-text",
+  // },
+  // {
+  //   title: "Vinyl Planking",
+  //   path: "/services/vinyl-planking",
+  //   cName: "nav-text",
+  // },
   {
     title: "About",
     path: "/about-us",
     cName: "nav-text",
   },
+  {
+    title: "Blog",
+    path: "/blog",
+    cName: "nav-text",
+  },
+  // {
+  //   title: "Gallery",
+  //   path: "/gallery",
+  //   cName: "nav-text",
+  // },
 ];
 
 export const aboutInfoCards = [

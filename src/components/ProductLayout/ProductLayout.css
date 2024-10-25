@@ -1,6 +1,8 @@
 .product-layout__color-section__header {
+  font-family: "Lora", serif;
   text-align: center;
   font-size: 40px;
+  font-weight: 400;
   margin: 0;
   padding: 80px 0 40px;
 }
@@ -13,7 +15,6 @@
 }
 
 .product-layout__colors-section {
-  /* width: 880px; */
   max-width: calc(100% - 100px);
   box-sizing: border-box;
   position: relative;
@@ -24,7 +25,6 @@
 
 .product-layout__colors-section__cards {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, max-content)); */
   grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
   justify-content: center;
   grid-gap: 20px 18px;
@@ -34,6 +34,7 @@
 }
 
 .product-layout__colors-section__card {
+  font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -42,11 +43,11 @@
   background: white;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.2s ease-out;
 
   &:hover {
-    transition: all 0.2s ease-out;
     box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-    top: -4px;
+    transform: translate(0, -5px);
     border-radius: 4px;
   }
 }
@@ -59,14 +60,14 @@
 }
 
 .product-layout__colors-section__card-title {
+  font-family: "Nunito", sans-serif;
   max-width: 90%;
   margin: 0 auto 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-family: "Rubik", sans-serif, Arial;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 16px;
   line-height: 29px;
   text-align: center;
@@ -95,7 +96,6 @@
 
 @media screen and (max-width: 851px) {
   .product-layout__colors-section {
-    /* background: red; */
     max-width: calc(100% - 50px);
   }
   .product-layout__colors-section__cards {
@@ -116,7 +116,6 @@
 
 @media screen and (max-width: 680px) {
   .product-layout__colors-section {
-    /* background: blue; */
     max-width: calc(100% - 20px);
   }
   .product-layout__colors-section__cards {

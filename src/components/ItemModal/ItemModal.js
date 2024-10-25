@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import React from "react";
-import "./ItemModal.css";
 
 function ItemModal({ card, onClose }) {
   const handleCloseOnOverlayClick = (event) => {
@@ -34,10 +33,6 @@ function ItemModal({ card, onClose }) {
         />
         <div className="item-modal__content">
           <h2 className="item-modal__title">{card.title}</h2>
-
-          {/* <div className="item-modal__description">
-            <p className="item-modal__weather">{card.title}</p>
-          </div> */}
         </div>
       </div>
     </div>
