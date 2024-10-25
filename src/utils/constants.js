@@ -189,7 +189,7 @@ export const aboutProcess = [
     image: processConstruction,
     title: "Construction",
     paragraph:
-      "From the moment the dumpster pulls onto the site, we treat your home like ours. From floor coverings and isolating the construction zone, we clean and organize daily. Regular updates will keep you informed of progress and ensure you are satisfied every step of the way.",
+      "From the moment the we pull onto the site, we treat your home like ours. From floor coverings and isolating the construction zone, we clean and organize daily. Regular updates will keep you informed of progress and ensure you are satisfied every step of the way.",
   },
 ];
 
