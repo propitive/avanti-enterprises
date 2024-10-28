@@ -18,6 +18,7 @@ import ModalGetAQuote from "../ModalGetAQuote/ModalGetAQuote";
 import GeneralGallery from "../Gallery/GeneralGallery";
 import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
 import Project1 from "../Gallery/Galleries/Projects/Project1";
+import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../Blog/Blogs/202410/ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency";
 
 function App() {
   const [modals, setModals] = useState({
@@ -65,6 +66,14 @@ function App() {
           path="/blog/unlock-the-secrets-to-a-clutter-free-kitchen-organize-your-cabinets-like-a-pro"
         >
           <UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro
+            handleOpenModal={() => toggleModal("emailList", true)}
+          />
+        </Route>
+        <Route
+          exact
+          path="/blog/expert-tips-for-organizing-your-bathroom-cabinet-for-maximum-efficiency"
+        >
+          <ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency
             handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>
