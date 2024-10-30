@@ -19,6 +19,7 @@ import GeneralGallery from "../Gallery/GeneralGallery";
 import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
 import Project1 from "../Gallery/Galleries/Projects/Project1";
 import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../Blog/Blogs/202410/ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency";
+import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../Blog/Blogs/202410/HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty";
 
 function App() {
   const [modals, setModals] = useState({
@@ -66,6 +67,14 @@ function App() {
           path="/blog/unlock-the-secrets-to-a-clutter-free-kitchen-organize-your-cabinets-like-a-pro"
         >
           <UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro
+            handleOpenModal={() => toggleModal("emailList", true)}
+          />
+        </Route>
+        <Route
+          exact
+          path="/blog/how-to-clean-kitchen-cabinets-expert-tips-for-long-lasting-beauty"
+        >
+          <HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty
             handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>

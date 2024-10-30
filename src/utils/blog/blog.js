@@ -1,7 +1,16 @@
 import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../../images/blog/202409/unlockTheSecretsTo.jpg";
 import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../../images/blog/202410/ExpertTipsFor.jpg";
+import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../../images/blog/202410/HowToCleanKitchen.jpg";
 
 export const generalBlogs = [
+  {
+    link: "/blog/how-to-clean-kitchen-cabinets-expert-tips-for-long-lasting-beauty",
+    image: HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty,
+    alt: "Close-up of clean and polished kitchen cabinets showcasing their shine and longevity",
+    date: "10/30/24",
+    title: "How to Clean Kitchen Cabinets: Expert Tips for Long-Lasting Beauty",
+    subtitle: "Follow these steps to keep your kitchen cabinets looking new.",
+  },
   {
     link: "/blog/expert-tips-for-organizing-your-bathroom-cabinet-for-maximum-efficiency",
     image: ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency,
