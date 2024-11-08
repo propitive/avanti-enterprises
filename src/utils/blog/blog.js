@@ -1,8 +1,17 @@
 import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../../images/blog/202409/unlockTheSecretsTo.jpg";
 import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../../images/blog/202410/ExpertTipsFor.jpg";
 import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../../images/blog/202410/HowToCleanKitchen.jpg";
+import KitchenCabinetDesignIdeasForYourDreamSpace from "../../images/blog/202411/KitchenCabinetDesign.jpg";
 
 export const generalBlogs = [
+  {
+    link: "/blog/kitchen-cabinet-design-ideas-for-your-dream-space",
+    image: KitchenCabinetDesignIdeasForYourDreamSpace,
+    alt: "Kitchen cabinets that are modern, but have a touch of farmer in them.",
+    date: "11/08/24",
+    title: "Kitchen Cabinet Design Ideas for Your Dream Space",
+    subtitle: "Transform your kitchen with these stunning cabinet design tips!",
+  },
   {
     link: "/blog/how-to-clean-kitchen-cabinets-expert-tips-for-long-lasting-beauty",
     image: HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty,

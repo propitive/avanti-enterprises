@@ -20,6 +20,7 @@ import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from ".
 import Project1 from "../Gallery/Galleries/Projects/Project1";
 import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../Blog/Blogs/202410/ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency";
 import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../Blog/Blogs/202410/HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty";
+import KitchenCabinetDesignIdeasForYourDreamSpace from "../Blog/Blogs/202411/KitchenCabinetDesignIdeasForYourDreamSpace";
 
 function App() {
   const [modals, setModals] = useState({
@@ -60,6 +61,14 @@ function App() {
           <VinylPlanking
             handleOpenModal={() => toggleModal("getAQuote", true)}
             onCardClick={onCardClick}
+          />
+        </Route>
+        <Route
+          exact
+          path="/blog/kitchen-cabinet-design-ideas-for-your-dream-space"
+        >
+          <KitchenCabinetDesignIdeasForYourDreamSpace
+            handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>
         <Route

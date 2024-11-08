@@ -21,7 +21,7 @@ function Main({ handleOpenModal }) {
         <meta
           name="description"
           content="
-Avanti Enterprises, top contractors in Dallas, TX, specializes in custom kitchen and bathroom remodeling. Offering design, build, and service for single and double homes."
+Avanti Enterprises, top contractor in Dallas, TX, specializes in custom kitchen and bathroom remodeling. Offering design, build, and service for residential properties."
         />
         <link rel="canonical" href="/" />
       </Helmet>
