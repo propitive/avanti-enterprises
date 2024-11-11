@@ -1,26 +1,29 @@
 import { Route, Switch } from "react-router-dom";
 import { useState } from "react";
 
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
-import ContactForm from "../ContactForm/ContactForm";
-import Main from "../Main/Main";
-import ScrollToTop from "../ScrollToTop/ScrollToTop";
-import KitchenCabinets from "../KitchenCabinets/KitchenCabinets";
-import BathroomCabinets from "../BathroomCabinets/BathroomCabinets";
-import VinylPlanking from "../VinylPlanking/VinylPlanking";
 import About from "../About/About";
+import BathroomCabinets from "../BathroomCabinets/BathroomCabinets";
+import ContactForm from "../ContactForm/ContactForm";
+import Footer from "../Footer/Footer";
+import GeneralBlog from "../Blog/GeneralBlog/GeneralBlog";
+import GeneralGallery from "../Gallery/GeneralGallery";
+import Header from "../Header/Header";
+import ItemModal from "../ItemModal/ItemModal";
+import KitchenCabinets from "../KitchenCabinets/KitchenCabinets";
+import Main from "../Main/Main";
 import ModalContactForm from "../ModalContactForm/ModalContactForm";
 import ModalEmailList from "../ModalEmailList/ModalEmailList";
-import ItemModal from "../ItemModal/ItemModal";
-import GeneralBlog from "../Blog/GeneralBlog/GeneralBlog";
 import ModalGetAQuote from "../ModalGetAQuote/ModalGetAQuote";
-import GeneralGallery from "../Gallery/GeneralGallery";
-import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
+import VinylPlanking from "../VinylPlanking/VinylPlanking";
+
 import Project1 from "../Gallery/Galleries/Projects/Project1";
+
+import CabinetMaintenanceTipsEveryHomeownerShouldKnow from "../Blog/Blogs/202411/CabinetMaintenanceTipsEveryHomeownerShouldKnow";
 import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../Blog/Blogs/202410/ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency";
 import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../Blog/Blogs/202410/HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty";
 import KitchenCabinetDesignIdeasForYourDreamSpace from "../Blog/Blogs/202411/KitchenCabinetDesignIdeasForYourDreamSpace";
+import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
 
 function App() {
   const [modals, setModals] = useState({
@@ -61,6 +64,14 @@ function App() {
           <VinylPlanking
             handleOpenModal={() => toggleModal("getAQuote", true)}
             onCardClick={onCardClick}
+          />
+        </Route>
+        <Route
+          exact
+          path="/blog/cabinet-maintenance-tips-every-homeowner-should-know"
+        >
+          <CabinetMaintenanceTipsEveryHomeownerShouldKnow
+            handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>
         <Route

@@ -2,8 +2,18 @@ import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from ".
 import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../../images/blog/202410/ExpertTipsFor.jpg";
 import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../../images/blog/202410/HowToCleanKitchen.jpg";
 import KitchenCabinetDesignIdeasForYourDreamSpace from "../../images/blog/202411/KitchenCabinetDesign.jpg";
+import CabinetMaintenanceTipsEveryHomeownerShouldKnow from "../../images/blog/202411/cabinetMaintenanceTipsEvery.jpg";
 
 export const generalBlogs = [
+  {
+    link: "/blog/cabinet-maintenance-tips-every-homeowner-should-know",
+    image: CabinetMaintenanceTipsEveryHomeownerShouldKnow,
+    alt: "Kitchen and bathroom cabinets maintenance tips for long-lasting performance.",
+    date: "11/11/24",
+    title: "Cabinet Maintenance Tips Every Homeowner Should Know",
+    subtitle:
+      "Discover simple tricks to keep your kitchen and bathroom cabinets in top shape for years to come.",
+  },
   {
     link: "/blog/kitchen-cabinet-design-ideas-for-your-dream-space",
     image: KitchenCabinetDesignIdeasForYourDreamSpace,
