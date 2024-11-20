@@ -24,6 +24,7 @@ import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../B
 import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../Blog/Blogs/202410/HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty";
 import KitchenCabinetDesignIdeasForYourDreamSpace from "../Blog/Blogs/202411/KitchenCabinetDesignIdeasForYourDreamSpace";
 import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
+import MakingTheMostOutOfCornerCabinets from "../Blog/Blogs/202411/MakingTheMostOutOfCornerCabinets";
 
 function App() {
   const [modals, setModals] = useState({
@@ -76,17 +77,9 @@ function App() {
         </Route>
         <Route
           exact
-          path="/blog/kitchen-cabinet-design-ideas-for-your-dream-space"
+          path="/blog/expert-tips-for-organizing-your-bathroom-cabinet-for-maximum-efficiency"
         >
-          <KitchenCabinetDesignIdeasForYourDreamSpace
-            handleOpenModal={() => toggleModal("emailList", true)}
-          />
-        </Route>
-        <Route
-          exact
-          path="/blog/unlock-the-secrets-to-a-clutter-free-kitchen-organize-your-cabinets-like-a-pro"
-        >
-          <UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro
+          <ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency
             handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>
@@ -98,11 +91,24 @@ function App() {
             handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>
+        <Route exact path="/blog/making-the-most-out-of-corner-cabinets">
+          <MakingTheMostOutOfCornerCabinets
+            handleOpenModal={() => toggleModal("emailList", true)}
+          />
+        </Route>
         <Route
           exact
-          path="/blog/expert-tips-for-organizing-your-bathroom-cabinet-for-maximum-efficiency"
+          path="/blog/kitchen-cabinet-design-ideas-for-your-dream-space"
         >
-          <ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency
+          <KitchenCabinetDesignIdeasForYourDreamSpace
+            handleOpenModal={() => toggleModal("emailList", true)}
+          />
+        </Route>
+        <Route
+          exact
+          path="/blog/unlock-the-secrets-to-a-clutter-free-kitchen-organize-your-cabinets-like-a-pro"
+        >
+          <UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro
             handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>

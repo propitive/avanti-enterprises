@@ -3,8 +3,17 @@ import ExpertTipsForOrganizingYourBathroomCabinetForMaximumEfficiency from "../.
 import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../../images/blog/202410/HowToCleanKitchen.jpg";
 import KitchenCabinetDesignIdeasForYourDreamSpace from "../../images/blog/202411/KitchenCabinetDesign.jpg";
 import CabinetMaintenanceTipsEveryHomeownerShouldKnow from "../../images/blog/202411/cabinetMaintenanceTipsEvery.jpg";
+import MakingTheMostOutOfCornerCabinets from "../../images/blog/202411/MakingTheMostOutOfCornerCabinets.jpg";
 
 export const generalBlogs = [
+  {
+    link: "/blog/making-the-most-out-of-corner-cabinets",
+    image: MakingTheMostOutOfCornerCabinets,
+    alt: "Optimized corner cabinet storage solutions for kitchen and bathroom remodeling.",
+    date: "11/20/24",
+    title: "Making the Most Out of Corner Cabinets",
+    subtitle: "Maximize the space you get from every inch of your kitchen!",
+  },
   {
     link: "/blog/cabinet-maintenance-tips-every-homeowner-should-know",
     image: CabinetMaintenanceTipsEveryHomeownerShouldKnow,
