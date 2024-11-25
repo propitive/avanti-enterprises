@@ -4,8 +4,19 @@ import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../../image
 import KitchenCabinetDesignIdeasForYourDreamSpace from "../../images/blog/202411/KitchenCabinetDesign.jpg";
 import CabinetMaintenanceTipsEveryHomeownerShouldKnow from "../../images/blog/202411/cabinetMaintenanceTipsEvery.jpg";
 import MakingTheMostOutOfCornerCabinets from "../../images/blog/202411/MakingTheMostOutOfCornerCabinets.jpg";
+import ShakersAndTraditionalKitchen from "../../images/blog/202411/ShakersAndTraditionalKitchen.jpg";
 
 export const generalBlogs = [
+  {
+    link: "/blog/shakers-and-traditional-kitchen-cabinets-timeless-elegance-for-your-home",
+    image: ShakersAndTraditionalKitchen,
+    alt: "Shakers and traditional kitchen cabinets in a modern kitchen remodel showcasing timeless design elements.",
+    date: "11/25/24",
+    title:
+      "Shakers and Traditional Kitchen Cabinets: Timeless Elegance for Your Home",
+    subtitle:
+      "All about the charm and versatility of two iconic cabinet styles.",
+  },
   {
     link: "/blog/making-the-most-out-of-corner-cabinets",
     image: MakingTheMostOutOfCornerCabinets,

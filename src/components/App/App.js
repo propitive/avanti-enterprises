@@ -25,6 +25,7 @@ import HowToCleanKitchenCabinetsExpertTipsForLongLastingBeauty from "../Blog/Blo
 import KitchenCabinetDesignIdeasForYourDreamSpace from "../Blog/Blogs/202411/KitchenCabinetDesignIdeasForYourDreamSpace";
 import UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro from "../Blog/Blogs/202409/UnlockTheSecretsToAClutterFreeKitchenOrganizeYourCabinetsLikeAPro";
 import MakingTheMostOutOfCornerCabinets from "../Blog/Blogs/202411/MakingTheMostOutOfCornerCabinets";
+import ShakersAndTraditionalKitchenCabinetsTimelessEleganceForYourHome from "../Blog/Blogs/202411/ShakersAndTraditionalKitchenCabinetsTimelessEleganceForYourHome";
 
 function App() {
   const [modals, setModals] = useState({
@@ -93,6 +94,14 @@ function App() {
         </Route>
         <Route exact path="/blog/making-the-most-out-of-corner-cabinets">
           <MakingTheMostOutOfCornerCabinets
+            handleOpenModal={() => toggleModal("emailList", true)}
+          />
+        </Route>
+        <Route
+          exact
+          path="/blog/shakers-and-traditional-kitchen-cabinets-timeless-elegance-for-your-home"
+        >
+          <ShakersAndTraditionalKitchenCabinetsTimelessEleganceForYourHome
             handleOpenModal={() => toggleModal("emailList", true)}
           />
         </Route>
